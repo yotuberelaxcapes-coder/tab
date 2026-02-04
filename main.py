@@ -1,130 +1,85 @@
-import requests
+import time
 import json
-import os
-import sys  # Sistem komutları için gerekli
+import undetected_chromedriver as uc
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 
-# --- KULLANICI BİLGİLERİ ---
-EMAIL = "Mr.aykutsen@gmail.com"
-PASSWORD = "ŞİFRENİ_BURAYA_YAZ"  # <-- Şifreni buraya yapıştırmayı unutma!
+class DizipalScraper:
+    def __init__(self, url):
+        self.url = url
+        self.driver = None
+        self.data = []
 
-# --- AYARLAR ---
-BASE_URL = "https://eu1.tabii.com/apigateway"
-LOGIN_URL = "https://eu1.tabii.com/auth/v1/login"
+    def start_browser(self):
+        """Tarayıcıyı başlatır ve ayarları yapar."""
+        print("🌐 Tarayıcı başlatılıyor...")
+        options = uc.ChromeOptions()
+        # options.add_argument('--headless')  # Arka planda çalıştırmak istersen yorumu kaldır
+        self.driver = uc.Chrome(options=options)
 
-HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
-    "Content-Type": "application/json"
-}
+    def scrape(self):
+        """Siteye gider ve verileri çeker."""
+        if not self.driver:
+            self.start_browser()
 
-def login_and_get_token():
-    print("🔑 Giriş yapılıyor...")
-    payload = {"email": EMAIL, "password": PASSWORD}
-    
-    try:
-        response = requests.post(LOGIN_URL, json=payload, headers=HEADERS)
-        if response.status_code == 200:
-            data = response.json()
-            token = data.get("token") or data.get("access_token") or data.get("session", {}).get("token")
-            if token:
-                print("✅ Giriş başarılı! Token alındı.")
-                return token
-            else:
-                print(f"❌ Giriş başarılı ama Token bulunamadı. Yanıt: {data}")
-                sys.exit(1) # Hata verip durdur
-        else:
-            print(f"❌ Giriş başarısız! Hata Kodu: {response.status_code}")
-            print(f"❌ Cevap: {response.text}")
-            sys.exit(1) # Hata verip durdur
-            
-    except Exception as e:
-        print(f"❌ Login bağlantı hatası: {e}")
-        sys.exit(1)
-
-def get_contents(auth_token):
-    print("📡 İçerikler çekiliyor...")
-    auth_headers = HEADERS.copy()
-    auth_headers["Authorization"] = f"Bearer {auth_token}"
-    
-    # Hedef ID (Genel Akış veya benzeri bir liste ID'si)
-    target_id = "149106_149112" 
-    api_endpoint = f"{BASE_URL}/pbr/v1/pages/browse/{target_id}"
-    
-    try:
-        response = requests.get(api_endpoint, headers=auth_headers)
-        if response.status_code == 200:
-            return response.json()
-        else:
-            print(f"❌ Veri çekilemedi. Kod: {response.status_code}")
-            sys.exit(1)
-    except Exception as e:
-        print(f"❌ Veri çekme hatası: {e}")
-        sys.exit(1)
-
-def generate_files(data, auth_token):
-    if not data:
-        print("❌ Veri boş geldi!")
-        sys.exit(1)
-
-    m3u_content = "#EXTM3U\n"
-    json_list = []
-    
-    items = []
-    if "components" in data:
-        for comp in data["components"]:
-             if "elements" in comp:
-                 items.extend(comp["elements"])
-
-    print(f"📄 Toplam {len(items)} içerik bulundu. Dosyalar hazırlanıyor...")
-
-    if len(items) == 0:
-        print("⚠️ HATA: Listede hiç içerik yok! API yapısı değişmiş olabilir.")
-        # Dosya oluşmazsa git add hata verir, o yüzden boş dosya oluşturalım:
-        with open("playlist.m3u", "w") as f: f.write("")
-        with open("tabii_data.json", "w") as f: f.write("[]")
-        return
-
-    for item in items:
         try:
-            media_id = item.get("id")
-            title = item.get("title", "Bilinmeyen Başlık")
+            print(f"🔗 {self.url} adresine gidiliyor...")
+            self.driver.get(self.url)
             
-            image_url = ""
-            if "images" in item and item["images"]:
-                image_url = item["images"][0].get("url", "")
-                if image_url and not image_url.startswith("http"):
-                    image_url = f"https://cms-tabii-assets.tabii.com{image_url}"
+            print("⏳ Güvenlik kontrolü bekleniyor (10sn)...")
+            time.sleep(10)  # Cloudflare geçişi için bekleme süresi
 
-            stream_url = f"{BASE_URL}/pbr/v1/media/{media_id}/master.mpd"
+            print("📂 Veriler taranıyor...")
+            # HTML yapısına göre 'new-added-list' içindeki 'a' etiketlerini bulur
+            dizi_kartlari = self.driver.find_elements(By.CSS_SELECTOR, ".new-added-list a")
 
-            m3u_content += f'#EXTINF:-1 tvg-id="{media_id}" tvg-logo="{image_url}", {title}\n'
-            m3u_content += f'#EXTVLCOPT:http-user-agent={HEADERS["User-Agent"]}\n'
-            m3u_content += f'#EXTVLCOPT:http-header-authorization=Bearer {auth_token}\n'
-            m3u_content += f'{stream_url}\n'
+            if not dizi_kartlari:
+                print("❌ Hiçbir dizi bulunamadı! CSS seçicileri kontrol et.")
+                return
 
-            json_list.append({
-                "id": media_id,
-                "title": title,
-                "thumbnail": image_url,
-                "stream_url": stream_url,
-                "drm": "widevine",
-                "headers": {
-                    "Authorization": f"Bearer {auth_token}",
-                    "User-Agent": HEADERS["User-Agent"]
-                }
-            })
+            print(f"✅ Toplam {len(dizi_kartlari)} içerik bulundu. İşleniyor...")
 
-        except Exception:
-            continue
+            for kart in dizi_kartlari:
+                try:
+                    isim = kart.find_element(By.TAG_NAME, "h2").text.strip()
+                    link = kart.get_attribute("href")
+                    
+                    if isim and link:
+                        self.data.append({
+                            "isim": isim,
+                            "link": link
+                        })
+                except Exception as e:
+                    print(f"⚠️ Bir kart işlenirken hata oluştu: {e}")
+                    continue
 
-    with open("playlist.m3u", "w", encoding="utf-8") as f:
-        f.write(m3u_content)
-    
-    with open("tabii_data.json", "w", encoding="utf-8") as f:
-        json.dump(json_list, f, ensure_ascii=False, indent=4)
+        except Exception as e:
+            print(f"❌ Genel Hata: {e}")
+        
+        finally:
+            self.close_browser()
 
-    print("✅ Dosyalar başarıyla oluşturuldu!")
+    def save_to_json(self, filename="diziler.json"):
+        """Verileri JSON dosyasına kaydeder."""
+        if not self.data:
+            print("⚠️ Kaydedilecek veri yok.")
+            return
+
+        with open(filename, "w", encoding="utf-8") as f:
+            json.dump(self.data, f, ensure_ascii=False, indent=4)
+        print(f"💾 Veriler '{filename}' dosyasına başarıyla kaydedildi.")
+
+    def close_browser(self):
+        """Tarayıcıyı kapatır."""
+        if self.driver:
+            self.driver.quit()
+            print("🔒 Tarayıcı kapatıldı.")
 
 if __name__ == "__main__":
-    token = login_and_get_token()
-    content_data = get_contents(token)
-    generate_files(content_data, token)
+    # Güncel URL buraya girilecek
+    TARGET_URL = "https://dizipal1536.com/yabanci-dizi-izle"
+    
+    bot = DizipalScraper(TARGET_URL)
+    bot.scrape()
+    bot.save_to_json()
