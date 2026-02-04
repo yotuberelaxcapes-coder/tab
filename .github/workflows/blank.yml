@@ -1,59 +1,41 @@
-name: Tabii Scraper
+name: Dizipal Veri Çekici 🤖
 
 on:
-  workflow_dispatch:      # Manuel tetikleme butonu (Actions sekmesinden elle başlatmak için)
+  workflow_dispatch: # Manuel çalıştırma butonu ekler
   schedule:
-    - cron: '0 */6 * * *' # 6 saatte bir otomatik çalışır
+    - cron: '0 */6 * * *' # Her 6 saatte bir otomatik çalışır
 
 permissions:
-  contents: write         # Repo'ya dosya yükleme izni (ÇOK ÖNEMLİ)
+  contents: write
 
 jobs:
-  scrape_and_update:
+  scrape_and_commit:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Depodaki kodları çek
-      - name: Depoyu Kontrol Et (Checkout)
+      - name: 📥 Repoyu Çek (Checkout)
         uses: actions/checkout@v3
 
-      # 2. Python ortamını kur
-      - name: Python Kurulumu
+      - name: 🐍 Python Kurulumu
         uses: actions/setup-python@v4
         with:
-          python-version: '3.9'
+          python-version: '3.10'
 
-      # 3. Gerekli kütüphaneleri yükle
-      - name: Gerekli Kütüphaneleri Yükle
+      - name: 🌐 Google Chrome Kurulumu
+        uses: browser-actions/setup-chrome@latest
+
+      - name: 📦 Kütüphaneleri Yükle
         run: |
           python -m pip install --upgrade pip
-          pip install requests
+          pip install -r requirements.txt
 
-      # 4. Senin main.py dosyanı çalıştır
-      - name: Python Scriptini Çalıştır
+      - name: 🚀 Botu Çalıştır
         run: python main.py
 
-      # 5. Dosyaları Git'e yükle (Hata Önleyici Mantık)
-      - name: Değişiklikleri Kaydet ve Gönder
+      - name: 💾 Verileri Kaydet ve Pushla
         run: |
-          # Git kullanıcı kimliğini ayarla
-          git config --global user.name "Tabii Bot"
-          git config --global user.email "bot@tabii.scraper"
-
-          # Dosyanın gerçekten oluşup oluşmadığını kontrol et
-          if [ -f "playlist.m3u" ]; then
-            echo "✅ Başarılı: playlist.m3u dosyası bulundu."
-            
-            # Dosyaları ekle
-            git add playlist.m3u tabii_data.json
-            
-            # Eğer dosyalarda değişiklik varsa commit et, yoksa hata verme (|| echo kısmı bunu sağlar)
-            git commit -m "Otomatik Güncelleme: $(date)" || echo "⚠️ Değişiklik yok, commit atlanıyor."
-            
-            # Değişiklikleri gönder
-            git push
-          else
-            echo "❌ KRİTİK HATA: Python scripti çalıştı ama 'playlist.m3u' dosyasını oluşturamadı."
-            echo "Lütfen main.py içindeki giriş bilgilerini ve kodun çalışıp çalışmadığını kontrol et."
-            exit 1
-          fi
+          git config --global user.name "GitHub Action Bot"
+          git config --global user.email "actions@github.com"
+          git add diziler.json
+          git commit -m "🤖 Yeni veriler eklendi: $(date)" || echo "Değişiklik yok"
+          git push
