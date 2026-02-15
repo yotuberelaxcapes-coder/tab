@@ -1,20 +1,17 @@
-import cloudscraper
+from curl_cffi import requests
 from bs4 import BeautifulSoup
 import json
 
 def dizi_verilerini_cek(dizi_url):
-    # Standart requests yerine cloudscraper kullanıyoruz
-    scraper = cloudscraper.create_scraper()
-    
     print(f"[*] Dizi sayfası taranıyor: {dizi_url}")
-    response = scraper.get(dizi_url)
     
-    # Sitenin bizi engelleyip engellemediğini görmek için durum kodunu yazdırıyoruz
+    # curl_cffi ile gerçek bir Chrome 110 tarayıcısını taklit ediyoruz
+    response = requests.get(dizi_url, impersonate="chrome110")
     print(f"[*] Yanıt Kodu: {response.status_code}")
     
     if response.status_code != 200:
-        print("[!] Siteye erişilemedi. Bot koruması veya IP engeli olabilir.")
-    
+        print("[!] Siteye erişilemedi. Cloudflare, GitHub Actions IP'sini tamamen engelliyor olabilir.")
+        
     soup = BeautifulSoup(response.text, 'html.parser')
     
     dizi_data = {
@@ -36,7 +33,6 @@ def dizi_verilerini_cek(dizi_url):
     json_ld_tag = soup.find('script', type='application/ld+json')
     if json_ld_tag:
         try:
-            # .string yerine .text kullanmak daha güvenlidir, strict=False ile hatalı karakterleri es geçeriz
             ld_data = json.loads(json_ld_tag.text, strict=False)
             dizi_data['isim'] = ld_data.get('name', '')
             dizi_data['gorsel'] = ld_data.get('image', '')
@@ -48,7 +44,6 @@ def dizi_verilerini_cek(dizi_url):
             if 'actor' in ld_data:
                 dizi_data['oyuncular'] = [actor.get('name') for actor in ld_data['actor']]
                 
-            # Bölüm linklerini toplama
             if 'containsSeason' in ld_data:
                 for season in ld_data['containsSeason']:
                     if 'episode' in season:
@@ -91,7 +86,8 @@ def dizi_verilerini_cek(dizi_url):
         
         try:
             print(f"  -> Bölüm taranıyor: {bolum_adi}")
-            b_res = scraper.get(bolum_url)
+            # Bölüm sayfalarına girerken de taklit yapıyoruz
+            b_res = requests.get(bolum_url, impersonate="chrome110")
             b_soup = BeautifulSoup(b_res.text, 'html.parser')
             
             vidmoly_link = b_soup.select_one('.menu a[href*="vidmoly"]')
