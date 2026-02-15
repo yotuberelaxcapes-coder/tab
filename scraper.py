@@ -1,181 +1,128 @@
-import cloudscraper
+import requests
 from bs4 import BeautifulSoup
-import re
 import json
-import base64
-import time
-import sys
+import os
 
-# --- P.A.C.K.E.R. Çözücü ---
-def unpack(p, a, c, k, e=None, d=None):
-    def e_func(c):
-        return ('' if c < a else e_func(int(c / a))) + \
-               (chr(c % a + 29) if c % a > 35 else str(base64.b36encode(bytes([c % a]))[2:].decode('utf-8')))
-    while c:
-        c -= 1
-        if k[c]:
-            p = re.sub(r'\b' + e_func(c) + r'\b', k[c], p)
-    return p
+def dizi_verilerini_cek(dizi_url):
+    headers = {
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+        "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
+    }
+    
+    print(f"[*] Dizi sayfası taranıyor: {dizi_url}")
+    response = requests.get(dizi_url, headers=headers)
+    soup = BeautifulSoup(response.text, 'html.parser')
+    
+    dizi_data = {
+        "url": dizi_url,
+        "isim": "",
+        "orijinal_isim": "",
+        "yil": "",
+        "tur": [],
+        "imdb": "",
+        "gorsel": "",
+        "aciklama": "",
+        "oyuncular": [],
+        "bolumler": []
+    }
+    
+    # 1. JSON-LD içindeki hazır yapısal verileri (Künye) çekme
+    json_ld_tag = soup.find('script', type='application/ld+json')
+    if json_ld_tag:
+        try:
+            ld_data = json.loads(json_ld_tag.string)
+            dizi_data['isim'] = ld_data.get('name', '')
+            dizi_data['gorsel'] = ld_data.get('image', '')
+            dizi_data['aciklama'] = ld_data.get('description', '')
+            
+            if 'aggregateRating' in ld_data:
+                dizi_data['imdb'] = ld_data['aggregateRating'].get('ratingValue', '')
+            
+            if 'actor' in ld_data:
+                dizi_data['oyuncular'] = [actor.get('name') for actor in ld_data['actor']]
+                
+            # Bölüm linklerini toplama
+            bolum_linkleri = []
+            if 'containsSeason' in ld_data:
+                for season in ld_data['containsSeason']:
+                    if 'episode' in season:
+                        for ep in season['episode']:
+                            bolum_linkleri.append({
+                                "isim": ep.get('name'),
+                                "url": ep.get('url')
+                            })
+            
+        except Exception as e:
+            print(f"[!] JSON-LD ayrıştırma hatası: {e}")
 
-class HDFilmScraper:
-    def __init__(self):
-        # Cloudscraper ayarları
-        self.scraper = cloudscraper.create_scraper(
-            browser={'browser': 'chrome', 'platform': 'windows', 'desktop': True}
-        )
+    # 2. HTML İçerisinden Tür ve Yıl Bilgilerini Ayıklama
+    try:
+        yil_tag = soup.select_one('.page-title .light-title')
+        if yil_tag:
+            dizi_data['yil'] = yil_tag.text.strip('()')
+            
+        tur_etiketleri = soup.select('.ui.list .item a[href*="/tur/"]')
+        dizi_data['tur'] = [tur.text for tur in tur_etiketleri]
+    except Exception:
+        pass
+
+    # 3. Bölüm Sayfalarına Gidip Okru ve Vidmoly Kaynaklarını Bulma
+    for bolum in bolum_linkleri:
+        bolum_adi = bolum['isim']
+        bolum_url = bolum['url']
         
-        # GÜNCEL ADRES KONTROLÜ: Site yasaklandıkça uzantı değişir.
-        # Tarayıcınızdan siteye girip yönlendiği son adresi buraya yazın.
-        # Örnek: .nl, .co, .net, .com vb.
-        self.base_url = "https://www.hdfilmcehennemi.nl" 
-        self.category_url = f"{self.base_url}/category/film-izle-2/"
-        self.movies = []
-
-        # Proxy ayarları (VPN yoksa ve 451 hatası alıyorsanız burayı doldurun)
-        # Format: "http://kullanici:sifre@ip:port" veya "http://ip:port"
-        self.proxies = {
-            # "http": "http://IP_ADRESI:PORT",
-            # "https": "http://IP_ADRESI:PORT",
+        kaynaklar = {
+            "vidmoly": None,
+            "okru": None,
+            "sifreli_hashler": [] # Sayfadaki şifreli data-link değerleri
         }
-
-    def get_movies_from_category(self):
-        print(f"1. Kategoriye Bağlanılıyor: {self.category_url}")
-        try:
-            # Proxy varsa kullan, yoksa direkt bağlan
-            if self.proxies:
-                response = self.scraper.get(self.category_url, proxies=self.proxies)
-            else:
-                response = self.scraper.get(self.category_url)
-            
-            if response.status_code == 451:
-                print("KRİTİK HATA (451): Erişim engeli var (VPN kullanın veya GitHub Actions'da çalıştırın).")
-                return
-            elif response.status_code != 200:
-                print(f"HATA: Sayfaya girilemedi. Kod: {response.status_code}")
-                return
-
-            soup = BeautifulSoup(response.content, "html.parser")
-            posters = soup.select(".poster")
-            
-            if not posters:
-                print("UYARI: Film bulunamadı! Site yapısı değişmiş olabilir.")
-                return
-
-            print(f"Toplam {len(posters)} film bulundu. Veriler çekiliyor...")
-
-            for poster in posters[:10]: # Test için ilk 10 film
-                movie_data = {}
-                movie_data["title"] = poster.get("title")
-                
-                # Link bazen tam bazen göreceli olabilir
-                href = poster.get("href")
-                if href.startswith("http"):
-                    movie_data["link"] = href
-                else:
-                    movie_data["link"] = self.base_url + href
-                
-                img_tag = poster.find("img")
-                if img_tag:
-                    movie_data["poster"] = img_tag.get("data-src") or img_tag.get("src")
-                
-                year_span = poster.select_one(".poster-meta span:first-child")
-                movie_data["year"] = year_span.text.strip() if year_span else "N/A"
-
-                print(f"--> İşleniyor: {movie_data['title']}")
-                
-                if movie_data["link"]:
-                    details = self.get_movie_details(movie_data["link"])
-                    movie_data.update(details)
-                
-                self.movies.append(movie_data)
-                time.sleep(1) # Banlanmamak için bekle
-
-        except Exception as e:
-            print(f"Genel Hata: {e}")
-
-    def get_movie_details(self, movie_url):
-        data = {"description": "", "imdb": "", "stream_url": "", "iframe_url": ""}
-        try:
-            # Proxy kontrolü
-            if self.proxies:
-                response = self.scraper.get(movie_url, proxies=self.proxies)
-            else:
-                response = self.scraper.get(movie_url)
-
-            soup = BeautifulSoup(response.content, "html.parser")
-            
-            # Açıklama
-            desc_tag = soup.select_one("article.post-info-content p")
-            if desc_tag:
-                data["description"] = desc_tag.text.strip()
-            
-            # IMDb
-            imdb_tag = soup.select_one(".post-info-imdb-rating span")
-            if imdb_tag:
-                data["imdb"] = imdb_tag.text.strip()
-
-            # Rapidrame veya diğer playerları bul
-            iframe = soup.select_one("iframe[data-src*='rapidrame']") or soup.select_one("iframe[data-src*='video/embed']") or soup.select_one("iframe[src*='rapidrame']")
-            
-            if iframe:
-                iframe_url = iframe.get("data-src") or iframe.get("src")
-                if iframe_url.startswith("//"):
-                    iframe_url = "https:" + iframe_url
-                
-                data["iframe_url"] = iframe_url
-                data["stream_url"] = self.resolve_player(iframe_url)
-            else:
-                # Bazen player JS içinde saklıdır, basit bir kontrol:
-                data["iframe_url"] = "Iframe bulunamadı (JS ile gömülü olabilir)"
-
-        except Exception as e:
-            print(f"    Detay hatası: {e}")
         
-        return data
-
-    def resolve_player(self, iframe_url):
         try:
-            headers = {"Referer": self.base_url}
-            if self.proxies:
-                response = self.scraper.get(iframe_url, headers=headers, proxies=self.proxies)
-            else:
-                response = self.scraper.get(iframe_url, headers=headers)
+            print(f"  -> Bölüm taranıyor: {bolum_adi}")
+            b_res = requests.get(bolum_url, headers=headers)
+            b_soup = BeautifulSoup(b_res.text, 'html.parser')
+            
+            # Vidmoly indirme / izleme linkini yakalama (HTML'deki dropdown menüsünden)
+            vidmoly_link = b_soup.select_one('.menu a[href*="vidmoly"]')
+            if vidmoly_link:
+                kaynaklar['vidmoly'] = vidmoly_link['href']
                 
-            content = response.text
-
-            # Packer şifresini bul
-            packer_pattern = r"eval\(function\(p,a,c,k,e,d\).*?\.split\('\|'\)\)\)"
-            packed_data = re.search(packer_pattern, content)
-
-            if packed_data:
-                packed_js = packed_data.group(0)
-                args = re.search(r"}\('(.*)',(\d+),(\d+),'(.*)'.split\('\|'\)", packed_js)
-                if args:
-                    p, a, c, k = args.group(1), int(args.group(2)), int(args.group(3)), args.group(4).split('|')
-                    unpacked_code = unpack(p, a, c, k)
+            # İframe kaynaklarında doğrudan link araması
+            iframes = b_soup.find_all('iframe')
+            for iframe in iframes:
+                src = iframe.get('src', '')
+                if 'ok.ru' in src or 'okru' in src:
+                    kaynaklar['okru'] = src
+                if 'vidmoly' in src and not kaynaklar['vidmoly']:
+                    kaynaklar['vidmoly'] = src
+            
+            # Eğer kaynaklar player içerisine şifreli basılıyorsa (alternatives-for-this)
+            alt_items = b_soup.select('.alternatives-for-this .item')
+            for item in alt_items:
+                kaynak_ismi = item.text.strip().lower()
+                hash_degeri = item.get('data-link')
+                if hash_degeri:
+                    kaynaklar['sifreli_hashler'].append({"kaynak": kaynak_ismi, "hash": hash_degeri})
                     
-                    # Linki yakala
-                    m3u8_match = re.search(r'file\s*:\s*["\'](https?://[^"\']+\.m3u8[^"\']*)["\']', unpacked_code)
-                    if m3u8_match: return m3u8_match.group(1)
-                    
-                    # Alternatif link yakalama
-                    var_match = re.search(r'var\s+([a-zA-Z0-9_]+)\s*=\s*["\'](https?://[^"\']+)["\']', unpacked_code)
-                    if var_match: return var_match.group(2)
-
-            return "Stream Linki Çözülemedi"
-
         except Exception as e:
-            return f"Player Hatası: {e}"
+            print(f"  [!] {bolum_adi} taraması başarısız: {e}")
+            
+        dizi_data['bolumler'].append({
+            "bolum_ismi": bolum_adi,
+            "bölüm_linki": bolum_url,
+            "izleme_kaynaklari": kaynaklar
+        })
 
-    def save_json(self):
-        if not self.movies:
-            print("Kaydedilecek veri yok.")
-            return
-        with open("hdfilm_data.json", "w", encoding="utf-8") as f:
-            json.dump(self.movies, f, ensure_ascii=False, indent=4)
-        print(f"\nBaşarılı! {len(self.movies)} film 'hdfilm_data.json' dosyasına kaydedildi.")
+    return dizi_data
 
 if __name__ == "__main__":
-    scraper = HDFilmScraper()
-    scraper.get_movies_from_category()
-    scraper.save_json()
+    # Test etmek istediğiniz ana dizi URL'si
+    baslangic_url = "https://yabancidizi.so/dizi/1-happy-family-usa-izle-6"
+    
+    sonuc = dizi_verilerini_cek(baslangic_url)
+    
+    dosya_adi = "dizi_verileri.json"
+    with open(dosya_adi, "w", encoding="utf-8") as f:
+        json.dump(sonuc, f, ensure_ascii=False, indent=4)
+        
+    print(f"\n[+] İşlem tamamlandı! Veriler {dosya_adi} dosyasına kaydedildi.")
