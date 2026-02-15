@@ -1,15 +1,20 @@
-import requests
+import cloudscraper
 from bs4 import BeautifulSoup
 import json
 
 def dizi_verilerini_cek(dizi_url):
-    headers = {
-        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
-        "Accept-Language": "tr-TR,tr;q=0.9,en-US;q=0.8,en;q=0.7"
-    }
+    # Standart requests yerine cloudscraper kullanıyoruz
+    scraper = cloudscraper.create_scraper()
     
     print(f"[*] Dizi sayfası taranıyor: {dizi_url}")
-    response = requests.get(dizi_url, headers=headers)
+    response = scraper.get(dizi_url)
+    
+    # Sitenin bizi engelleyip engellemediğini görmek için durum kodunu yazdırıyoruz
+    print(f"[*] Yanıt Kodu: {response.status_code}")
+    
+    if response.status_code != 200:
+        print("[!] Siteye erişilemedi. Bot koruması veya IP engeli olabilir.")
+    
     soup = BeautifulSoup(response.text, 'html.parser')
     
     dizi_data = {
@@ -25,14 +30,14 @@ def dizi_verilerini_cek(dizi_url):
         "bolumler": []
     }
     
-    # HATA BURADA ÇÖZÜLDÜ: Değişkeni en başta boş liste olarak tanımlıyoruz.
     bolum_linkleri = []
     
-    # 1. JSON-LD içindeki hazır yapısal verileri (Künye) çekme
+    # 1. JSON-LD içindeki hazır yapısal verileri çekme
     json_ld_tag = soup.find('script', type='application/ld+json')
     if json_ld_tag:
         try:
-            ld_data = json.loads(json_ld_tag.string)
+            # .string yerine .text kullanmak daha güvenlidir, strict=False ile hatalı karakterleri es geçeriz
+            ld_data = json.loads(json_ld_tag.text, strict=False)
             dizi_data['isim'] = ld_data.get('name', '')
             dizi_data['gorsel'] = ld_data.get('image', '')
             dizi_data['aciklama'] = ld_data.get('description', '')
@@ -48,7 +53,6 @@ def dizi_verilerini_cek(dizi_url):
                 for season in ld_data['containsSeason']:
                     if 'episode' in season:
                         for ep in season['episode']:
-                            # İsim bilgisini güvenli bir şekilde alıyoruz
                             ep_name = ep.get('name', '')
                             ep_url = ep.get('url', '')
                             if ep_url:
@@ -56,9 +60,12 @@ def dizi_verilerini_cek(dizi_url):
                                     "isim": ep_name,
                                     "url": ep_url
                                 })
+            print(f"[+] Künye verileri ve {len(bolum_linkleri)} bölüm linki başarıyla çekildi.")
             
         except Exception as e:
             print(f"[!] JSON-LD ayrıştırma hatası: {e}")
+    else:
+        print("[!] JSON verisi (application/ld+json) sayfada bulunamadı.")
 
     # 2. HTML İçerisinden Tür ve Yıl Bilgilerini Ayıklama
     try:
@@ -84,15 +91,13 @@ def dizi_verilerini_cek(dizi_url):
         
         try:
             print(f"  -> Bölüm taranıyor: {bolum_adi}")
-            b_res = requests.get(bolum_url, headers=headers)
+            b_res = scraper.get(bolum_url)
             b_soup = BeautifulSoup(b_res.text, 'html.parser')
             
-            # Vidmoly indirme / izleme linkini yakalama (HTML'deki dropdown menüsünden)
             vidmoly_link = b_soup.select_one('.menu a[href*="vidmoly"]')
             if vidmoly_link:
                 kaynaklar['vidmoly'] = vidmoly_link.get('href', '')
                 
-            # İframe kaynaklarında doğrudan link araması
             iframes = b_soup.find_all('iframe')
             for iframe in iframes:
                 src = iframe.get('src', '')
@@ -101,7 +106,6 @@ def dizi_verilerini_cek(dizi_url):
                 if 'vidmoly' in src and not kaynaklar['vidmoly']:
                     kaynaklar['vidmoly'] = src
             
-            # Eğer kaynaklar player içerisine şifreli basılıyorsa (alternatives-for-this)
             alt_items = b_soup.select('.alternatives-for-this .item')
             for item in alt_items:
                 kaynak_ismi = item.text.strip().lower()
@@ -122,7 +126,6 @@ def dizi_verilerini_cek(dizi_url):
 
 if __name__ == "__main__":
     baslangic_url = "https://yabancidizi.so/dizi/1-happy-family-usa-izle-6"
-    
     sonuc = dizi_verilerini_cek(baslangic_url)
     
     dosya_adi = "dizi_verileri.json"
