@@ -1,7 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
 import json
-import os
 
 def dizi_verilerini_cek(dizi_url):
     headers = {
@@ -26,6 +25,9 @@ def dizi_verilerini_cek(dizi_url):
         "bolumler": []
     }
     
+    # HATA BURADA ÇÖZÜLDÜ: Değişkeni en başta boş liste olarak tanımlıyoruz.
+    bolum_linkleri = []
+    
     # 1. JSON-LD içindeki hazır yapısal verileri (Künye) çekme
     json_ld_tag = soup.find('script', type='application/ld+json')
     if json_ld_tag:
@@ -42,15 +44,18 @@ def dizi_verilerini_cek(dizi_url):
                 dizi_data['oyuncular'] = [actor.get('name') for actor in ld_data['actor']]
                 
             # Bölüm linklerini toplama
-            bolum_linkleri = []
             if 'containsSeason' in ld_data:
                 for season in ld_data['containsSeason']:
                     if 'episode' in season:
                         for ep in season['episode']:
-                            bolum_linkleri.append({
-                                "isim": ep.get('name'),
-                                "url": ep.get('url')
-                            })
+                            # İsim bilgisini güvenli bir şekilde alıyoruz
+                            ep_name = ep.get('name', '')
+                            ep_url = ep.get('url', '')
+                            if ep_url:
+                                bolum_linkleri.append({
+                                    "isim": ep_name,
+                                    "url": ep_url
+                                })
             
         except Exception as e:
             print(f"[!] JSON-LD ayrıştırma hatası: {e}")
@@ -74,7 +79,7 @@ def dizi_verilerini_cek(dizi_url):
         kaynaklar = {
             "vidmoly": None,
             "okru": None,
-            "sifreli_hashler": [] # Sayfadaki şifreli data-link değerleri
+            "sifreli_hashler": []
         }
         
         try:
@@ -85,7 +90,7 @@ def dizi_verilerini_cek(dizi_url):
             # Vidmoly indirme / izleme linkini yakalama (HTML'deki dropdown menüsünden)
             vidmoly_link = b_soup.select_one('.menu a[href*="vidmoly"]')
             if vidmoly_link:
-                kaynaklar['vidmoly'] = vidmoly_link['href']
+                kaynaklar['vidmoly'] = vidmoly_link.get('href', '')
                 
             # İframe kaynaklarında doğrudan link araması
             iframes = b_soup.find_all('iframe')
@@ -116,7 +121,6 @@ def dizi_verilerini_cek(dizi_url):
     return dizi_data
 
 if __name__ == "__main__":
-    # Test etmek istediğiniz ana dizi URL'si
     baslangic_url = "https://yabancidizi.so/dizi/1-happy-family-usa-izle-6"
     
     sonuc = dizi_verilerini_cek(baslangic_url)
