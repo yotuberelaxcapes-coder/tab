@@ -2,10 +2,8 @@ name: Dizi Verilerini Çek (Scraper Bot)
 
 on:
   schedule:
-    # Her gün gece yarısı (UTC 00:00) çalışır. İstersen aralığı değiştirebilirsin.
     - cron: '0 0 * * *'
   workflow_dispatch:
-    # Bu ayar sayesinde GitHub'da "Actions" sekmesinden botu elle de çalıştırabilirsin.
 
 jobs:
   scrape-and-commit:
@@ -23,7 +21,7 @@ jobs:
       - name: Gerekli Python Kütüphanelerini Yükle
         run: |
           python -m pip install --upgrade pip
-          pip install requests beautifulsoup4 cloudscraper
+          pip install beautifulsoup4 curl_cffi
 
       - name: Scraper Botunu Çalıştır
         run: python scraper.py
@@ -33,6 +31,5 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action Bot"
           git add dizi_verileri.json
-          # Eğer dosyada değişiklik yoksa hata vermemesi için "|| echo" ekliyoruz
           git commit -m "🤖 Dizi/Film verileri güncellendi" || echo "Güncellenecek yeni veri yok."
           git push
