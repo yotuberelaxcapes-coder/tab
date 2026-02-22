@@ -1,12 +1,11 @@
 import asyncio
 from playwright.async_api import async_playwright
-from playwright_stealth import stealth_async
 
 async def main():
     url = "https://sezonlukdizi.cc/fate-strange-fake/1-sezon-8-bolum.html"
 
     async with async_playwright() as p:
-        # Headless modunu kapattık, argümanlarla bot algılayıcıları yanıltıyoruz
+        # Headless modunu kapalı tutarak sanal ekranda çalıştırıyoruz
         browser = await p.chromium.launch(
             headless=False,
             args=[
@@ -16,41 +15,50 @@ async def main():
             ]
         )
         
-        # Gerçek bir kullanıcı gibi görünmek için User-Agent ekliyoruz
+        # Gerçek bir Windows makinesindeki Chrome gibi davran
         context = await browser.new_context(
-            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            user_agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+            locale="tr-TR",
+            timezone_id="Europe/Istanbul"
         )
         page = await context.new_page()
         
-        # Stealth (Gizlilik) eklentisini sayfaya uygula
-        await stealth_async(page)
+        # --- BOT GİZLEME (STEALTH) ENJEKSİYONLARI ---
+        # Cloudflare'ın botları tespit etmek için kullandığı webdriver bayrağını ve diğer tarayıcı izlerini siliyoruz
+        await page.add_init_script("""
+            Object.defineProperty(navigator, 'webdriver', {get: () => undefined});
+            window.navigator.chrome = { runtime: {} };
+            Object.defineProperty(navigator, 'plugins', {get: () => [1, 2, 3]});
+            Object.defineProperty(navigator, 'languages', {get: () => ['tr-TR', 'tr', 'en-US', 'en']});
+        """)
         
         print(f"Sayfaya gidiliyor: {url}")
         await page.goto(url, wait_until="domcontentloaded")
         
-        print("Bot koruması (Cloudflare vb.) kontrol ediliyor, bekleniyor...")
-        # Korumanın geçilmesi için 8 saniye bekliyoruz
+        print("Sayfa yükleniyor, Cloudflare vb. korumalar bekleniyor...")
+        # Koruma ekranının geçmesi için bekleme süresi
         await page.wait_for_timeout(8000) 
 
         try:
-            # Alternatif menüsünün yüklenmesini bekle
+            # Alternatifler menüsünün yüklenmesini bekle
             await page.wait_for_selector('#alternatif', timeout=15000)
             
-            # Dropdown menüyü açmak için 'Alternatifler' yazısına tıkla
+            # Dropdown menüyü aç
             await page.click('#alternatif')
             await page.wait_for_timeout(1000)
 
-            # Menü içindeki alternatifleri bul
+            # Menü içindeki alternatif kaynak isimlerini bul
             alternatifler = await page.query_selector_all('#alternatif .menu .item')
             print(f"Toplam {len(alternatifler)} alternatif bulundu.\n")
 
             for alt in alternatifler:
                 isim = await alt.inner_text()
                 
-                # Alternatife tıkla ve iframe'in gelmesini bekle
+                # İlgili alternatife tıkla ve iframe (oynatıcı) yüklenmesini bekle
                 await alt.click()
-                await page.wait_for_timeout(3000) 
+                await page.wait_for_timeout(4000) 
                 
+                # Iframe'in içindeki src (kaynak) linkini al
                 iframe = await page.query_selector('#embed iframe')
                 if iframe:
                     src = await iframe.get_attribute('src')
@@ -58,12 +66,12 @@ async def main():
                 else:
                     print(f"Kaynak: {isim.strip()} -> Link bulunamadı.")
                     
-                # Sonraki alternatif için menüyü tekrar aç
+                # Sonraki döngü için alternatifler menüsünü tekrar aç
                 await page.click('#alternatif')
                 await page.wait_for_timeout(1000)
 
         except Exception as e:
-            print(f"Bir hata oluştu veya koruma aşılamadı: {e}")
+            print(f"Hata oluştu veya koruma aşılamadı: {e}")
 
         finally:
             await browser.close()
