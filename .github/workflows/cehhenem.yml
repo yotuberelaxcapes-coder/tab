@@ -2,8 +2,8 @@ name: Dizi Link Scraper Bot
 
 on:
   schedule:
-    - cron: '0 0 * * *' # Her gün gece yarısı çalışır
-  workflow_dispatch: # GitHub arayüzünden manuel tetiklemeye izin verir
+    - cron: '0 0 * * *' 
+  workflow_dispatch: 
 
 jobs:
   scrape-links:
@@ -18,13 +18,16 @@ jobs:
       with:
         python-version: '3.10'
 
+    - name: Sanal Ekran (Xvfb) Kurulumu
+      run: sudo apt-get update && sudo apt-get install -y xvfb
+
     - name: Kütüphaneleri Yükle ve Tarayıcıyı Kur
       run: |
         python -m pip install --upgrade pip
-        # Kütüphaneleri doğrudan burada yüklüyoruz
-        pip install playwright beautifulsoup4
-        # Playwright için gerekli olan arkaplan tarayıcısını kuruyoruz
+        # playwright-stealth kütüphanesini ekliyoruz
+        pip install playwright playwright-stealth beautifulsoup4
         playwright install chromium
 
     - name: Scraper Scriptini Çalıştır
-      run: python scraper.py
+      # Scripti sanal bir ekranda (headless olmadan) çalıştırıyoruz
+      run: xvfb-run --auto-servernum --server-args="-screen 0 1280x1024x24" python scraper.py
