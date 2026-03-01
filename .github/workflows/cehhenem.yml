@@ -1,12 +1,12 @@
-name: TRT Cocuk M3U Olusturucu
+name: TRT Cocuk Dinamik M3U Guncelleyici
 
 on:
   schedule:
-    - cron: '0 */12 * * *' # Her 12 saatte bir otomatik çalışır
-  workflow_dispatch: # Actions sekmesinden manuel tetiklemeye izin verir
+    - cron: '0 */12 * * *' # Her 12 saatte bir çalışır
+  workflow_dispatch: # GitHub üzerinden manuel tetiklemeye izin verir
 
 permissions:
-  contents: write # Bot'un repoya dosya yazabilmesi için gerekli izin
+  contents: write
 
 jobs:
   build:
@@ -16,7 +16,7 @@ jobs:
     - name: Repoyu Klonla
       uses: actions/checkout@v3
 
-    - name: Python 3.x Kurulumu
+    - name: Python 3.10 Kurulumu
       uses: actions/setup-python@v4
       with:
         python-version: '3.10'
@@ -26,7 +26,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
 
-    - name: Verileri Çek ve M3U Dosyasını Oluştur
+    - name: Kazıyıcıyı Çalıştır
       run: python scraper.py
 
     - name: Değişiklikleri Kaydet (Commit & Push)
@@ -34,6 +34,6 @@ jobs:
         git config --local user.email "github-actions[bot]@users.noreply.github.com"
         git config --local user.name "github-actions[bot]"
         git add trtcocuk.m3u
-        # Sadece dosyada bir değişiklik varsa commit atar, yoksa hata vermeden atlar
-        git commit -m "🤖 M3U listesi güncellendi (Otomatik)" || echo "Değişiklik yok, commit atlanıyor."
+        # Sadece dosyada bir değişiklik varsa commit atar, yoksa script hatasız şekilde kapanır
+        git commit -m "🤖 TRT Çocuk M3U listesi güncellendi (Otomatik)" || echo "Değişiklik yok, commit atlanıyor."
         git push
