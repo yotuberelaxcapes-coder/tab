@@ -2,7 +2,7 @@ import requests
 import re
 from bs4 import BeautifulSoup
 
-BASE_URL = "https://www.trtcocuk.net.tr/video"
+BASE_URL = "https://www.trtcocuk.net.tr"
 
 def get_all_shows():
     print("Tüm programlar taranıyor...")
