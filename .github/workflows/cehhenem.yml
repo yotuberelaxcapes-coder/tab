@@ -1,31 +1,39 @@
-name: Dizi Link Scraper Bot
+name: TRT Cocuk M3U Olusturucu
 
 on:
   schedule:
-    - cron: '0 0 * * *' 
-  workflow_dispatch: 
+    - cron: '0 */12 * * *' # Her 12 saatte bir otomatik çalışır
+  workflow_dispatch: # Actions sekmesinden manuel tetiklemeye izin verir
+
+permissions:
+  contents: write # Bot'un repoya dosya yazabilmesi için gerekli izin
 
 jobs:
-  scrape-links:
+  build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Depoyu Klonla
-      uses: actions/checkout@v4
+    - name: Repoyu Klonla
+      uses: actions/checkout@v3
 
-    - name: Python Kurulumu
-      uses: actions/setup-python@v5
+    - name: Python 3.x Kurulumu
+      uses: actions/setup-python@v4
       with:
         python-version: '3.10'
 
-    - name: Sanal Ekran (Xvfb) Kurulumu
-      run: sudo apt-get update && sudo apt-get install -y xvfb
-
-    - name: Kütüphaneleri Yükle ve Tarayıcıyı Kur
+    - name: Gerekli Kütüphaneleri Yükle
       run: |
         python -m pip install --upgrade pip
-        pip install playwright beautifulsoup4
-        playwright install chromium
+        pip install -r requirements.txt
 
-    - name: Scraper Scriptini Çalıştır
-      run: xvfb-run --auto-servernum --server-args="-screen 0 1280x1024x24" python scraper.py
+    - name: Verileri Çek ve M3U Dosyasını Oluştur
+      run: python scraper.py
+
+    - name: Değişiklikleri Kaydet (Commit & Push)
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add trtcocuk.m3u
+        # Sadece dosyada bir değişiklik varsa commit atar, yoksa hata vermeden atlar
+        git commit -m "🤖 M3U listesi güncellendi (Otomatik)" || echo "Değişiklik yok, commit atlanıyor."
+        git push
