@@ -1,37 +1,41 @@
-import httpx
 import asyncio
 import re
 from bs4 import BeautifulSoup
+from curl_cffi import requests
 
 # --- AYARLAR ---
-MAIN_URL = "https://dizipal.bar"
-MAX_PAGE = 1 # Test için 1 sayfa. Tüm arşivi çekmek için bunu 5, 10 veya 50 yapabilirsin.
+MAIN_URL = "https://dizipal.bar" # Çalışmazsa güncel adresi buraya yazmalısın
+MAX_PAGE = 1 
 
-# Çekilecek Kategoriler (Orijinal koddaki gibi)
 KATEGORILER = {
     "Aksiyon": f"{MAIN_URL}/kategori/aksiyon/page/",
     "Bilim Kurgu": f"{MAIN_URL}/kategori/bilim-kurgu/page/",
     "Komedi": f"{MAIN_URL}/kategori/komedi/page/"
-    # İstersen diğer kategorileri buraya ekleyebilirsin
 }
 
 HEADERS = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
     "Referer": f"{MAIN_URL}/"
 }
 
 async def fetch_html(client, url):
-    """URL'den sayfa kaynağını güvenli bir şekilde çeker."""
+    """Gerçek bir Chrome tarayıcısı gibi davranarak sayfayı çeker."""
     try:
-        resp = await client.get(url, headers=HEADERS, timeout=15.0)
+        resp = await client.get(url, headers=HEADERS, timeout=20.0)
+        
         if resp.status_code == 200:
             return resp.text
+        elif resp.status_code in [403, 503]:
+            print(f"  [-] Cloudflare Korumasına Takıldık! (Hata: {resp.status_code})")
+            return None
+        else:
+            print(f"  [-] Sunucu Hatası: {resp.status_code}")
+            return None
+            
     except Exception as e:
-        print(f"[-] Hata ({url}): {e}")
+        print(f"  [-] Bağlantı Hatası: {e}")
     return None
 
 async def extract_video_data(client, page_url):
-    """Sayfadaki iframe'i bulup m3u8 ve altyazı linklerini kazar."""
     html = await fetch_html(client, page_url)
     if not html: return None
 
@@ -45,18 +49,14 @@ async def extract_video_data(client, page_url):
     if iframe_src.startswith("//"):
         iframe_src = "https:" + iframe_src
 
-    # İframe içine gir
     iframe_html = await fetch_html(client, iframe_src)
     if not iframe_html: return None
 
-    # M3U8 ve Altyazı Regex (Orijinal kod mantığı)
     m3u_match = re.search(r'file\s*:\s*["\']([^"\']+)["\']', iframe_html)
     sub_match = re.search(r'"subtitle"\s*:\s*["\']([^"\']+)["\']', iframe_html)
 
     if m3u_match:
         data = {"m3u8": m3u_match.group(1), "subtitles": []}
-        
-        # Altyazıları ayıkla ([TR]url,[EN]url formatı)
         if sub_match:
             sub_text = sub_match.group(1)
             for sub in sub_text.split(","):
@@ -64,15 +64,11 @@ async def extract_video_data(client, page_url):
                 lang_code = lang.group(1) if lang else "TR"
                 sub_url = re.sub(r'\[.*?\]', '', sub).strip()
                 data["subtitles"].append(f"{lang_code}: {sub_url}")
-                
         return data
     return None
 
 async def process_item(client, item_url, item_title):
-    """İçeriğin film mi yoksa dizi mi olduğunu anlar ve tüm linkleri toplar."""
     results = []
-    
-    # Eğer bu bir DİZİ ise
     if "/dizi/" in item_url:
         print(f"  [DİZİ] Bölümler taranıyor: {item_title}")
         html = await fetch_html(client, item_url)
@@ -92,9 +88,8 @@ async def process_item(client, item_url, item_title):
                 video_data = await extract_video_data(client, ep_url)
                 if video_data:
                     results.append({"title": full_title, "m3u8": video_data["m3u8"]})
-                await asyncio.sleep(0.5) # Ban yememek için bekle
+                await asyncio.sleep(1) # Hız sınırı için bekleme süresini artırdık
                 
-    # Eğer bu bir FİLM ise
     else:
         print(f"  [FİLM] Link çıkarılıyor: {item_title}")
         video_data = await extract_video_data(client, item_url)
@@ -107,7 +102,8 @@ async def main():
     m3u_content = "#EXTM3U\n"
     total_links = 0
     
-    async with httpx.AsyncClient(follow_redirects=True) as client:
+    # impersonate="chrome" kısmı bizi Cloudflare'den koruyan asıl kalkan
+    async with requests.AsyncSession(impersonate="chrome") as client:
         for cat_name, cat_url in KATEGORILER.items():
             print(f"\n=============================")
             print(f"[*] KATEGORİ: {cat_name}")
@@ -118,10 +114,15 @@ async def main():
                 print(f"\n[*] Sayfa {page} taranıyor: {url}")
                 
                 html = await fetch_html(client, url)
-                if not html: continue
+                if not html: 
+                    print("  [!] Sayfa kaynağı alınamadı, atlanıyor.")
+                    continue
                 
                 soup = BeautifulSoup(html, "html.parser")
                 items = soup.select("div.grid div.post-item")
+                
+                if not items:
+                    print("  [!] Bu sayfada hiç içerik bulunamadı. Domain değişmiş veya koruma aktif olabilir.")
                 
                 for item in items:
                     a_tag = item.select_one("a")
@@ -129,7 +130,6 @@ async def main():
                         title = a_tag.get("title", "İsimsiz")
                         href = a_tag.get("href")
                         
-                        # Film veya Dizinin içine gir
                         videos = await process_item(client, href, title)
                         
                         for vid in videos:
@@ -137,7 +137,7 @@ async def main():
                             m3u_content += f"{vid['m3u8']}\n"
                             total_links += 1
                             
-                        await asyncio.sleep(0.5)
+                        await asyncio.sleep(1)
 
     with open("dizipal_full.m3u", "w", encoding="utf-8") as f:
         f.write(m3u_content)
