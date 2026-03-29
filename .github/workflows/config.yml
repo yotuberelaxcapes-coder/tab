@@ -1,0 +1,12 @@
+plugin:
+  name: "DDizi"
+  language: "tr"
+  main_url: "https://www.ddizi.im"
+
+settings:
+  timeout: 15
+  output_dir: "./outputs"
+
+targets:
+  # JSON ve M3U'ya dönüştürülmesini istediğin dizi linklerini buraya ekle
+  - "https://www.ddizi.im/dizi/ornek-dizi-linki"
