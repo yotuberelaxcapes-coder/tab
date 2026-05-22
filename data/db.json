@@ -3,7 +3,10 @@
         "leagues": [
             "Süper Lig",
             "Premier League",
-            "La Liga"
+            "La Liga",
+            "Serie A",
+            "Bundesliga",
+            "Şampiyonlar Ligi"
         ],
         "standings": {
             "Süper Lig": [
@@ -43,58 +46,29 @@
                     "l": 13,
                     "pts": 61
                 }
+            ],
+            "Premier League": [
+                {
+                    "rank": 1,
+                    "team": "Man City",
+                    "p": 38,
+                    "w": 28,
+                    "d": 7,
+                    "l": 3,
+                    "pts": 91
+                },
+                {
+                    "rank": 2,
+                    "team": "Arsenal",
+                    "p": 38,
+                    "w": 28,
+                    "d": 5,
+                    "l": 5,
+                    "pts": 89
+                }
             ]
         },
-        "matches": [
-            {
-                "id": 1,
-                "league": "Süper Lig",
-                "home": "Galatasaray",
-                "away": "Fenerbahçe",
-                "scoreH": 2,
-                "scoreA": 1,
-                "status": "live",
-                "time": "76'",
-                "date": "Bugün",
-                "isToday": true
-            },
-            {
-                "id": 2,
-                "league": "Premier League",
-                "home": "Arsenal",
-                "away": "Man City",
-                "scoreH": 0,
-                "scoreA": 0,
-                "status": "live",
-                "time": "12'",
-                "date": "Bugün",
-                "isToday": true
-            },
-            {
-                "id": 3,
-                "league": "Süper Lig",
-                "home": "Beşiktaş",
-                "away": "Trabzonspor",
-                "scoreH": 1,
-                "scoreA": 1,
-                "status": "finished",
-                "time": "MS",
-                "date": "Dün",
-                "isToday": false
-            },
-            {
-                "id": 4,
-                "league": "La Liga",
-                "home": "Real Madrid",
-                "away": "Barcelona",
-                "scoreH": "-",
-                "scoreA": "-",
-                "status": "upcoming",
-                "time": "22:00",
-                "date": "Yarın",
-                "isToday": false
-            }
-        ]
+        "matches": []
     },
     "basketball": {
         "leagues": [
@@ -125,27 +99,15 @@
         },
         "matches": [
             {
-                "id": 11,
+                "id": "401873342",
                 "league": "NBA",
-                "home": "Lakers",
-                "away": "Warriors",
-                "scoreH": 105,
-                "scoreA": 102,
-                "status": "live",
-                "time": "4. Çeyrek",
-                "date": "Bugün",
-                "isToday": true
-            },
-            {
-                "id": 12,
-                "league": "EuroLeague",
-                "home": "Fenerbahçe",
-                "away": "Olympiakos",
-                "scoreH": 82,
-                "scoreA": 78,
+                "home": "Knicks",
+                "away": "Cavaliers",
+                "scoreH": "109",
+                "scoreA": "93",
                 "status": "finished",
                 "time": "MS",
-                "date": "Dün",
+                "date": "2026-05-22",
                 "isToday": false
             }
         ]
@@ -153,18 +115,18 @@
     "news": [
         {
             "id": 1,
-            "tag": "ÖZEL HABER",
-            "title": "Büyük Derbi Öncesi Kritik Gelişme",
-            "summary": "Takımların son antrenmanlarında neler yaşandı?",
-            "time": "Bugün 06:36"
+            "tag": "SİSTEM MESAJI",
+            "title": "Gerçek Zamanlı ESPN Veri Motoru Aktif",
+            "summary": "Dünya çapındaki tüm maçlar Python botu tarafından otomatik çekiliyor.",
+            "time": "Şimdi"
         },
         {
             "id": 2,
-            "tag": "ŞAMPİYONLAR LİGİ",
-            "title": "Kura Çekimi Tamamlandı",
-            "summary": "İşte dev eşleşmeler belli oldu.",
-            "time": "2 Saat Önce"
+            "tag": "GÜNCELLEME",
+            "title": "Veriler Senkronize Edildi",
+            "summary": "Son güncelleme saati: 06:41:55",
+            "time": "Yeni"
         }
     ],
-    "last_updated": "2026-05-22 06:36:34"
+    "last_updated": "2026-05-22 06:41:55"
 }
