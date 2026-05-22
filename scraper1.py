@@ -2,7 +2,6 @@ import requests
 import json
 import os
 from datetime import datetime
-import dateutil.parser # pip install python-dateutil gerektirebilir, standart kütüphane ile çözeceğiz.
 
 # Klasör yoksa oluştur
 if not os.path.exists('data'):
@@ -56,10 +55,10 @@ def fetch_matches_from_api(sport_type):
                     home_score = home_team.get('score', '-')
                     away_score = away_team.get('score', '-')
                     
-                    # Maç Durumunu (Canlı, Bitti, Fikstür) Çözümle
+                    # Maç Durumunu Çözümle
                     status_type = event['status']['type']
                     state = status_type['state'] # 'pre', 'in', 'post'
-                    time_detail = status_type['shortDetail'] # Örn: 'FT', '76', 'Halftime', '10/24'
+                    time_detail = status_type['shortDetail'] 
                     
                     if state == 'pre':
                         match_status = 'upcoming'
@@ -71,8 +70,6 @@ def fetch_matches_from_api(sport_type):
                     
                     # Tarih işlemleri
                     match_date_str = event['date'] # Format: 2024-05-22T19:00:00Z
-                    
-                    # Basit tarih gösterimi (Gerçek uygulamada timezone ayarlanır)
                     is_today = "Bugün" in time_detail or state == 'in'
                     date_display = "Bugün" if is_today else match_date_str[:10]
 
@@ -103,12 +100,11 @@ def generate_global_db():
     fb_leagues, fb_matches = fetch_matches_from_api("football")
     bb_leagues, bb_matches = fetch_matches_from_api("basketball")
     
-    # Tüm sitenin besleneceği devasa JSON veritabanı
+    # Tüm sitenin besleneceği JSON
     db = {
         "football": {
             "leagues": fb_leagues,
             "standings": {
-                # Puan durumu statik tutulmuştur, ileride API eklenebilir
                 "Süper Lig": [
                     {"rank": 1, "team": "Galatasaray", "p": 38, "w": 33, "d": 3, "l": 2, "pts": 102},
                     {"rank": 2, "team": "Fenerbahçe", "p": 38, "w": 31, "d": 6, "l": 1, "pts": 99},
@@ -133,18 +129,16 @@ def generate_global_db():
             "matches": bb_matches
         },
         "news": [
-            # Haberler için de ileride bir RSS veya API eklenebilir
             {"id": 1, "tag": "SİSTEM MESAJI", "title": "Gerçek Zamanlı ESPN Veri Motoru Aktif", "summary": "Dünya çapındaki tüm maçlar Python botu tarafından otomatik çekiliyor.", "time": "Şimdi"},
             {"id": 2, "tag": "GÜNCELLEME", "title": "Veriler Senkronize Edildi", "summary": f"Son güncelleme saati: {datetime.now().strftime('%H:%M:%S')}", "time": "Yeni"}
         ],
         "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     }
 
-    # JSON dosyasına kaydet
     with open('data/db.json', 'w', encoding='utf-8') as f:
         json.dump(db, f, ensure_ascii=False, indent=4)
         
-    print(f"Toplam {len(fb_matches) + len(bb_matches)} mac verisi basariyla data/db.json dosyasina yazildi.")
+    print(f"Toplam {len(fb_matches) + len(bb_matches)} mac verisi basariyla kaydedildi.")
 
 if __name__ == "__main__":
     generate_global_db()
