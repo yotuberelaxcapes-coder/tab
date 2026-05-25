@@ -99,15 +99,15 @@
         },
         "matches": [
             {
-                "id": "401873200",
+                "id": "401873344",
                 "league": "NBA",
-                "home": "Spurs",
-                "away": "Thunder",
-                "scoreH": "103",
-                "scoreA": "82",
-                "status": "finished",
-                "time": "MS",
-                "date": "2026-05-25",
+                "home": "Cavaliers",
+                "away": "Knicks",
+                "scoreH": "0",
+                "scoreA": "0",
+                "status": "upcoming",
+                "time": "5/25 - 8:00 PM EDT",
+                "date": "2026-05-26",
                 "isToday": false
             }
         ]
@@ -124,9 +124,9 @@
             "id": 2,
             "tag": "GÜNCELLEME",
             "title": "Veriler Senkronize Edildi",
-            "summary": "Son güncelleme saati: 13:58:03",
+            "summary": "Son güncelleme saati: 16:24:14",
             "time": "Yeni"
         }
     ],
-    "last_updated": "2026-05-25 13:58:03"
+    "last_updated": "2026-05-25 16:24:14"
 }
