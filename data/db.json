@@ -103,10 +103,10 @@
                 "league": "NBA",
                 "home": "Spurs",
                 "away": "Thunder",
-                "scoreH": "0",
-                "scoreA": "0",
-                "status": "upcoming",
-                "time": "5/28 - 8:30 PM EDT",
+                "scoreH": "118",
+                "scoreA": "91",
+                "status": "finished",
+                "time": "MS",
                 "date": "2026-05-29",
                 "isToday": false
             }
@@ -124,9 +124,9 @@
             "id": 2,
             "tag": "GÜNCELLEME",
             "title": "Veriler Senkronize Edildi",
-            "summary": "Son güncelleme saati: 00:07:18",
+            "summary": "Son güncelleme saati: 04:41:36",
             "time": "Yeni"
         }
     ],
-    "last_updated": "2026-05-29 00:07:18"
+    "last_updated": "2026-05-29 04:41:36"
 }
