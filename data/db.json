@@ -103,10 +103,10 @@
                 "league": "NBA",
                 "home": "Knicks",
                 "away": "Spurs",
-                "scoreH": "0",
-                "scoreA": "0",
-                "status": "upcoming",
-                "time": "6/8 - 8:30 PM EDT",
+                "scoreH": "111",
+                "scoreA": "115",
+                "status": "finished",
+                "time": "MS",
                 "date": "2026-06-09",
                 "isToday": false
             }
@@ -124,9 +124,9 @@
             "id": 2,
             "tag": "GÜNCELLEME",
             "title": "Veriler Senkronize Edildi",
-            "summary": "Son güncelleme saati: 00:01:18",
+            "summary": "Son güncelleme saati: 04:32:56",
             "time": "Yeni"
         }
     ],
-    "last_updated": "2026-06-09 00:01:18"
+    "last_updated": "2026-06-09 04:32:56"
 }
