@@ -99,6 +99,18 @@
         },
         "matches": [
             {
+                "id": "401898716",
+                "league": "NBA",
+                "home": "Kings",
+                "away": "Lakers",
+                "scoreH": "0",
+                "scoreA": "0",
+                "status": "upcoming",
+                "time": "TBD",
+                "date": "2026-10-05",
+                "isToday": false
+            },
+            {
                 "id": "401898388",
                 "league": "NBA",
                 "home": "Hawks",
@@ -124,9 +136,9 @@
             "id": 2,
             "tag": "GÜNCELLEME",
             "title": "Veriler Senkronize Edildi",
-            "summary": "Son güncelleme saati: 00:04:49",
+            "summary": "Son güncelleme saati: 03:43:21",
             "time": "Yeni"
         }
     ],
-    "last_updated": "2026-07-22 00:04:49"
+    "last_updated": "2026-07-22 03:43:21"
 }
