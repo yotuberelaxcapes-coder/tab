@@ -1,4 +1,4 @@
-name: CS3 to Kotlin Auto Converter
+name: CS3 Decompiler and Extractor
 
 on:
   workflow_dispatch: 
@@ -10,12 +10,24 @@ permissions:
   contents: write
 
 jobs:
-  build-and-convert:
+  build-and-decompile:
     runs-on: ubuntu-latest
 
     steps:
       - name: Depoyu Klonla
         uses: actions/checkout@v3
+
+      - name: Java Kurulumu (JADX için gerekli)
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: JADX Kurulumu (Decompiler)
+        run: |
+          wget https://github.com/skylot/jadx/releases/download/v1.4.7/jadx-1.4.7.zip
+          unzip jadx-1.4.7.zip -d jadx
+          sudo ln -s $(pwd)/jadx/bin/jadx /usr/local/bin/jadx
 
       - name: Python Kurulumu
         uses: actions/setup-python@v4
@@ -27,15 +39,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Python Betiğini ve Eklenti Kütüphanesini Oluştur
+      - name: Dönüştürücü Python Betiğini Oluştur ve Çalıştır
         run: |
-          cat << 'EOF' > converter.py
+          cat << 'EOF' > decompiler.py
           import os
-          import json
           import requests
-          import re
+          import subprocess
 
-          # Gönderdiğin kütüphanenin tamamı
           plugin_data = [
             {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/AnimeciX.cs3", "name": "AnimeciX"},
             {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Animeler.cs3", "name": "Animeler"},
@@ -106,55 +116,58 @@ jobs:
             {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/YTS.cs3", "name": "YTS"}
           ]
 
-          OUTPUT_DIR = "kotlin_src"
+          OUTPUT_DIR = "decompiled_src"
           os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-          def cs3_to_kotlin(cs3_code, plugin_name):
-              kt_code = cs3_code
-              # Temel syntax dönüşümleri
-              kt_code = kt_code.replace("public class", "class")
-              kt_code = kt_code.replace("public override", "override")
-              kt_code = kt_code.replace("public virtual", "open")
-              kt_code = re.sub(r'\bstring\b', 'String', kt_code)
-              kt_code = re.sub(r'\bbool\b', 'Boolean', kt_code)
-              kt_code = re.sub(r'\bint\b', 'Int', kt_code)
-              kt_code = re.sub(r'\bvoid\b', 'Unit', kt_code)
-              kt_code = re.sub(r'public\s+([A-Z][a-zA-Z0-9_]*)\s+([a-zA-Z0-9_]+)\s*\(', r'fun \2(): \1 {\n', kt_code)
-              kt_code = kt_code.replace("List<", "MutableList<")
-              kt_code = kt_code.replace("new List", "mutableListOf")
-              
-              # Paket ismini projene uygun hale getiriyoruz
-              header = f"// Otomatik dönüştürüldü: {plugin_name}.cs3 -> {plugin_name}.kt\npackage com.streamvisionplus.plugins\n\n"
-              return header + kt_code
-
           def main():
-              print("İndirme ve dönüştürme işlemi başlıyor...")
+              print("Dosyalar indiriliyor ve JADX ile çözülüyor...")
               for item in plugin_data:
                   url = item.get("url")
                   name = item.get("name")
+                  
+                  if not url or not name:
+                      continue
+
                   try:
+                      temp_file = f"{name}.cs3"
+                      # Dosyayı binary olarak indir
                       response = requests.get(url, timeout=15)
                       if response.status_code == 200:
-                          kt_content = cs3_to_kotlin(response.text, name)
-                          file_path = os.path.join(OUTPUT_DIR, f"{name}.kt")
-                          with open(file_path, "w", encoding="utf-8") as f:
-                              f.write(kt_content)
-                          print(f"Başarılı: {name}.kt oluşturuldu.")
+                          with open(temp_file, "wb") as f:
+                              f.write(response.content)
+                          
+                          out_folder = os.path.join(OUTPUT_DIR, name)
+                          print(f"{name} decompile ediliyor...")
+                          
+                          # jadx ile classes.dex dosyasını Java'ya çevir
+                          subprocess.run(
+                              ["jadx", "-d", out_folder, "--no-res", "--no-src-storage", temp_file],
+                              stdout=subprocess.DEVNULL, 
+                              stderr=subprocess.DEVNULL
+                          )
+                          
+                          os.remove(temp_file)
+                          print(f"Başarılı: {name} kaynak kodları çıkarıldı.")
                       else:
-                          print(f"Hata: {name} (HTTP {response.status_code})")
+                          print(f"Hata: {name} indirilemedi (HTTP {response.status_code})")
                   except Exception as e:
                       print(f"Hata oluştu ({name}): {e}")
 
           if __name__ == "__main__":
               main()
           EOF
-
-      - name: Dönüştürme Betiğini Çalıştır
-        run: python converter.py
+          python decompiler.py
 
       - name: Değişiklikleri Depoya Kaydet (Commit & Push)
         run: |
           git config --global user.name "GitHub Actions Bot"
           git config --global user.email "actions@github.com"
-          git add kotlin_src/
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Tüm eklenti kütüphanesi CS3 formatından Kotlin'e çevrildi" && git push)
+          git add decompiled_src/
+          
+          # Hata vermemesi için güvenli commit kontrolü
+          if ! git diff --staged --quiet; then
+            git commit -m "Eklentiler CS3 dex paketinden Java kaynak koduna dönüştürüldü"
+            git push
+          else
+            echo "Değişiklik bulunamadı, commit atlanıyor."
+          fi
