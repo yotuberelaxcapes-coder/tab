@@ -1,0 +1,160 @@
+name: CS3 to Kotlin Auto Converter
+
+on:
+  workflow_dispatch: 
+  push:
+    branches:
+      - main 
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-convert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Depoyu Klonla
+        uses: actions/checkout@v3
+
+      - name: Python Kurulumu
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Gerekli Python Kütüphanelerini Kur
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Python Betiğini ve Eklenti Kütüphanesini Oluştur
+        run: |
+          cat << 'EOF' > converter.py
+          import os
+          import json
+          import requests
+          import re
+
+          # Gönderdiğin kütüphanenin tamamı
+          plugin_data = [
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/AnimeciX.cs3", "name": "AnimeciX"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Animeler.cs3", "name": "Animeler"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Animely.cs3", "name": "Animely"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/AnimPow.cs3", "name": "AnimPow"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Anizium.cs3", "name": "Anizium"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/AsyaAnimeleri.cs3", "name": "AsyaAnimeleri"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/AsyaFanatiklerim.cs3", "name": "AsyaFanatiklerim"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/AsyaMinik.cs3", "name": "AsyaMinik"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/AsyaWatch.cs3", "name": "AsyaWatch"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/BelgeselX.cs3", "name": "BelgeselX"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/CizgiMax.cs3", "name": "CizgiMax"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/CizgiveDizi.cs3", "name": "CizgiveDizi"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Ddizi.cs3", "name": "Ddizi"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DiziAsia.cs3", "name": "DiziAsia"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DiziAsya.cs3", "name": "DiziAsya"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DiziBox.cs3", "name": "DiziBox"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DiziFilmORG.cs3", "name": "DiziFilmORG"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Dizigecesi.cs3", "name": "Dizigecesi"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DiziKorea.cs3", "name": "DiziKorea"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DiziLife.cs3", "name": "DiziLife"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Dizilla.cs3", "name": "Dizilla"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DiziMom.cs3", "name": "DiziMom"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DiziPal.cs3", "name": "DiziPal"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DiziPalOrijinal.cs3", "name": "DiziPalOrijinal"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Dizipod.cs3", "name": "Dizipod"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DiziYo.cs3", "name": "DiziYo"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DiziYou.cs3", "name": "DiziYou"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DramaDizilerim.cs3", "name": "DramaDizilerim"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/FilmEkseni.cs3", "name": "FilmEkseni"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/FilmHane.cs3", "name": "FilmHane"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/FilmMakinesi.cs3", "name": "FilmMakinesi"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/FilmModu.cs3", "name": "FilmModu"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Filmzal.cs3", "name": "Filmzal"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/FullHDFilmizlesene.cs3", "name": "FullHDFilmizlesene"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/GinikoCanli.cs3", "name": "GinikoCanli"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/HDFilmCehennemi.cs3", "name": "HDFilmCehennemi"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/HDFilmDelisi.cs3", "name": "HDFilmDelisi"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/HDFilmizle.cs3", "name": "HDFilmizle"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/InatBox.cs3", "name": "InatBox"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/JetFilmizle.cs3", "name": "JetFilmizle"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/KickTR.cs3", "name": "KickTR"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/KraptorPlus.cs3", "name": "KraptorPlus"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/KultFilmler.cs3", "name": "KultFilmler"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/MirrorVerse.cs3", "name": "MirrorVerse"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/OnePaceTr.cs3", "name": "OnePaceTr"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/OpenAnime.cs3", "name": "OpenAnime"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/RareFilmm.cs3", "name": "RareFilmm"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/RecTV.cs3", "name": "RecTV"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/SeiCode.cs3", "name": "SeiCode"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/SelcukFlix.cs3", "name": "SelcukFlix"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/SetFilmIzle.cs3", "name": "SetFilmIzle"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/SezonlukDizi.cs3", "name": "SezonlukDizi"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/SinemaCX.cs3", "name": "SinemaCX"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/SineWix.cs3", "name": "SineWix"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Sinezy.cs3", "name": "Sinezy"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/TrAnimeIzle.cs3", "name": "TrAnimeIzle"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/TurkAnime.cs3", "name": "TurkAnime"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Turkdizileri.cs3", "name": "Turkdizileri"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/TvDiziler.cs3", "name": "TvDiziler"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/WebDramaTurkey.cs3", "name": "WebDramaTurkey"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/WebteIzle.cs3", "name": "WebteIzle"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/WFilmizle.cs3", "name": "WFilmizle"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/YabanciDizi.cs3", "name": "YabanciDizi"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/YeniKaynak.cs3", "name": "YeniKaynak"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/YesilCamTv.cs3", "name": "YesilCamTv"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Youtube.cs3", "name": "Youtube"},
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/YTS.cs3", "name": "YTS"}
+          ]
+
+          OUTPUT_DIR = "kotlin_src"
+          os.makedirs(OUTPUT_DIR, exist_ok=True)
+
+          def cs3_to_kotlin(cs3_code, plugin_name):
+              kt_code = cs3_code
+              # Temel syntax dönüşümleri
+              kt_code = kt_code.replace("public class", "class")
+              kt_code = kt_code.replace("public override", "override")
+              kt_code = kt_code.replace("public virtual", "open")
+              kt_code = re.sub(r'\bstring\b', 'String', kt_code)
+              kt_code = re.sub(r'\bbool\b', 'Boolean', kt_code)
+              kt_code = re.sub(r'\bint\b', 'Int', kt_code)
+              kt_code = re.sub(r'\bvoid\b', 'Unit', kt_code)
+              kt_code = re.sub(r'public\s+([A-Z][a-zA-Z0-9_]*)\s+([a-zA-Z0-9_]+)\s*\(', r'fun \2(): \1 {\n', kt_code)
+              kt_code = kt_code.replace("List<", "MutableList<")
+              kt_code = kt_code.replace("new List", "mutableListOf")
+              
+              # Paket ismini projene uygun hale getiriyoruz
+              header = f"// Otomatik dönüştürüldü: {plugin_name}.cs3 -> {plugin_name}.kt\npackage com.streamvisionplus.plugins\n\n"
+              return header + kt_code
+
+          def main():
+              print("İndirme ve dönüştürme işlemi başlıyor...")
+              for item in plugin_data:
+                  url = item.get("url")
+                  name = item.get("name")
+                  try:
+                      response = requests.get(url, timeout=15)
+                      if response.status_code == 200:
+                          kt_content = cs3_to_kotlin(response.text, name)
+                          file_path = os.path.join(OUTPUT_DIR, f"{name}.kt")
+                          with open(file_path, "w", encoding="utf-8") as f:
+                              f.write(kt_content)
+                          print(f"Başarılı: {name}.kt oluşturuldu.")
+                      else:
+                          print(f"Hata: {name} (HTTP {response.status_code})")
+                  except Exception as e:
+                      print(f"Hata oluştu ({name}): {e}")
+
+          if __name__ == "__main__":
+              main()
+          EOF
+
+      - name: Dönüştürme Betiğini Çalıştır
+        run: python converter.py
+
+      - name: Değişiklikleri Depoya Kaydet (Commit & Push)
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add kotlin_src/
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Tüm eklenti kütüphanesi CS3 formatından Kotlin'e çevrildi" && git push)
