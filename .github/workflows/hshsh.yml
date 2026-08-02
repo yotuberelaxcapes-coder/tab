@@ -1,4 +1,4 @@
-name: CS3 Decompiler to Java (JADX)
+name: CS3 Decompiler to Java (JADX - Debug)
 
 on:
   workflow_dispatch:
@@ -23,7 +23,7 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: JADX İndir ve Kur (Decompiler)
+      - name: JADX İndir ve Kur
         run: |
           wget https://github.com/skylot/jadx/releases/download/v1.4.7/jadx-1.4.7.zip -O jadx.zip
           unzip jadx.zip -d jadx_tool
@@ -37,7 +37,7 @@ jobs:
       - name: Python Bağımlılıkları
         run: pip install requests
 
-      - name: Decompiler Betiğini Oluştur ve Çalıştır
+      - name: Decompiler Betiğini Çalıştır
         run: |
           cat << 'EOF' > decompile_script.py
           import os
@@ -46,100 +46,33 @@ jobs:
           import zipfile
           import shutil
 
+          # Test için listeyi kısalttım, sorunun nerede olduğunu hızlıca bulalım
+          # Eğer bu çalışırsa, eski uzun listeni tekrar koyabilirsin.
           plugin_data = [
             {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/AnimeciX.cs3", "name": "AnimeciX"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Animeler.cs3", "name": "Animeler"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Animely.cs3", "name": "Animely"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/AnimPow.cs3", "name": "AnimPow"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Anizium.cs3", "name": "Anizium"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/AsyaAnimeleri.cs3", "name": "AsyaAnimeleri"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/AsyaFanatiklerim.cs3", "name": "AsyaFanatiklerim"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/AsyaMinik.cs3", "name": "AsyaMinik"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/AsyaWatch.cs3", "name": "AsyaWatch"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/BelgeselX.cs3", "name": "BelgeselX"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/CizgiMax.cs3", "name": "CizgiMax"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/CizgiveDizi.cs3", "name": "CizgiveDizi"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Ddizi.cs3", "name": "Ddizi"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DiziAsia.cs3", "name": "DiziAsia"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DiziAsya.cs3", "name": "DiziAsya"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DiziBox.cs3", "name": "DiziBox"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DiziFilmORG.cs3", "name": "DiziFilmORG"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Dizigecesi.cs3", "name": "Dizigecesi"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DiziKorea.cs3", "name": "DiziKorea"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DiziLife.cs3", "name": "DiziLife"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Dizilla.cs3", "name": "Dizilla"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DiziMom.cs3", "name": "DiziMom"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DiziPal.cs3", "name": "DiziPal"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DiziPalOrijinal.cs3", "name": "DiziPalOrijinal"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Dizipod.cs3", "name": "Dizipod"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DiziYo.cs3", "name": "DiziYo"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DiziYou.cs3", "name": "DiziYou"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/DramaDizilerim.cs3", "name": "DramaDizilerim"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/FilmEkseni.cs3", "name": "FilmEkseni"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/FilmHane.cs3", "name": "FilmHane"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/FilmMakinesi.cs3", "name": "FilmMakinesi"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/FilmModu.cs3", "name": "FilmModu"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Filmzal.cs3", "name": "Filmzal"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/FullHDFilmizlesene.cs3", "name": "FullHDFilmizlesene"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/GinikoCanli.cs3", "name": "GinikoCanli"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/HDFilmCehennemi.cs3", "name": "HDFilmCehennemi"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/HDFilmDelisi.cs3", "name": "HDFilmDelisi"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/HDFilmizle.cs3", "name": "HDFilmizle"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/InatBox.cs3", "name": "InatBox"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/JetFilmizle.cs3", "name": "JetFilmizle"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/KickTR.cs3", "name": "KickTR"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/KraptorPlus.cs3", "name": "KraptorPlus"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/KultFilmler.cs3", "name": "KultFilmler"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/MirrorVerse.cs3", "name": "MirrorVerse"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/OnePaceTr.cs3", "name": "OnePaceTr"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/OpenAnime.cs3", "name": "OpenAnime"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/RareFilmm.cs3", "name": "RareFilmm"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/RecTV.cs3", "name": "RecTV"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/SeiCode.cs3", "name": "SeiCode"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/SelcukFlix.cs3", "name": "SelcukFlix"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/SetFilmIzle.cs3", "name": "SetFilmIzle"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/SezonlukDizi.cs3", "name": "SezonlukDizi"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/SinemaCX.cs3", "name": "SinemaCX"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/SineWix.cs3", "name": "SineWix"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Sinezy.cs3", "name": "Sinezy"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/TrAnimeIzle.cs3", "name": "TrAnimeIzle"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/TurkAnime.cs3", "name": "TurkAnime"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Turkdizileri.cs3", "name": "Turkdizileri"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/TvDiziler.cs3", "name": "TvDiziler"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/WebDramaTurkey.cs3", "name": "WebDramaTurkey"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/WebteIzle.cs3", "name": "WebteIzle"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/WFilmizle.cs3", "name": "WFilmizle"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/YabanciDizi.cs3", "name": "YabanciDizi"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/YeniKaynak.cs3", "name": "YeniKaynak"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/YesilCamTv.cs3", "name": "YesilCamTv"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Youtube.cs3", "name": "Youtube"},
-            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/YTS.cs3", "name": "YTS"}
+            {"url": "https://raw.githubusercontent.com/Kraptor123/cs-kraptor/builds/Animeler.cs3", "name": "Animeler"}
           ]
 
           OUTPUT_DIR = "java_src"
           os.makedirs(OUTPUT_DIR, exist_ok=True)
 
           def main():
-              print("İndirme, Unzip ve JADX ile Decompile işlemleri başlıyor...")
+              print("İşlem başlıyor...")
               
               for item in plugin_data:
                   url = item.get("url")
                   name = item.get("name")
                   
-                  if not url or not name:
-                      continue
-
                   try:
                       temp_cs3 = f"{name}.cs3"
                       temp_dir = f"temp_{name}"
                       
-                      # 1. CS3 (ZIP) dosyasını indir
+                      print(f"\n[{name}] indiriliyor...")
                       resp = requests.get(url, timeout=15)
                       if resp.status_code == 200:
                           with open(temp_cs3, "wb") as f:
                               f.write(resp.content)
                           
-                          # 2. ZIP'i aç ve classes.dex dosyasını çıkar
                           os.makedirs(temp_dir, exist_ok=True)
                           with zipfile.ZipFile(temp_cs3, 'r') as zip_ref:
                               zip_ref.extractall(temp_dir)
@@ -148,33 +81,38 @@ jobs:
                           
                           if os.path.exists(dex_path):
                               out_folder = os.path.join(OUTPUT_DIR, name)
+                              print(f"[{name}] classes.dex bulundu. JADX başlatılıyor...")
                               
-                              # 3. classes.dex dosyasını doğrudan JADX aracına teslim et
+                              # DİKKAT: DEVNULL kaldırıldı, artık JADX'in ne yaptığını göreceğiz.
                               subprocess.run([
                                   "./jadx_tool/bin/jadx", 
                                   "-d", out_folder, 
                                   "--no-res", 
                                   "--no-src-storage", 
                                   dex_path
-                              ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                              ])
                               
-                              print(f"[BAŞARILI] {name} kodları JADX ile Java'ya ayrıştırıldı.")
+                              print(f"[{name}] işlemi tamamlandı.")
                           else:
-                              print(f"[HATA] {name} içinde classes.dex bulunamadı!")
+                              print(f"[{name}] İÇİNDE CLASSES.DEX YOK!")
                           
-                          # Temizlik
                           os.remove(temp_cs3)
                           shutil.rmtree(temp_dir)
                       else:
-                          print(f"[HATA] {name} indirilemedi (HTTP {resp.status_code})")
+                          print(f"[{name}] İNDİRİLEMEDİ! HTTP {resp.status_code}")
                           
                   except Exception as e:
-                      print(f"[HATA] Beklenmeyen hata ({name}): {str(e)}")
+                      print(f"[{name}] HATA: {str(e)}")
 
           if __name__ == "__main__":
               main()
           EOF
           python decompile_script.py
+
+      - name: Klasörlerin İçini Kontrol Et (Debug)
+        run: |
+          echo "--- java_src KLASÖRÜNÜN İÇİ ---"
+          ls -R java_src/ || echo "Klasör boş veya yok!"
 
       - name: Değişiklikleri Depoya Kaydet (Commit & Push)
         run: |
@@ -182,8 +120,11 @@ jobs:
           git config --global user.email "actions@github.com"
           git add java_src/
           
+          # Force status check
+          git status
+          
           if ! git diff --staged --quiet; then
-            git commit -m "Eklentilerin kaynak kodları (Java) ayrıştırıldı"
+            git commit -m "Eklentilerin kaynak kodları (Java) başarıyla eklendi"
             git push
           else
             echo "Değişiklik bulunamadı, commit atlanıyor."
