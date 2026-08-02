@@ -1,4 +1,4 @@
-name: CS3 Decompiler to Java
+name: CS3 Decompiler to Java (JADX)
 
 on:
   workflow_dispatch:
@@ -23,15 +23,11 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      - name: Gerekli Araçları İndir (Dex2Jar & CFR)
+      - name: JADX İndir ve Kur (Decompiler)
         run: |
-          # Dex dosyalarını Jar'a çeviren araç
-          wget https://github.com/pxb1988/dex2jar/releases/download/v2.1/dex-tools-2.1.zip
-          unzip dex-tools-2.1.zip -d dex2jar
-          chmod +x dex2jar/d2j-dex2jar.sh
-          
-          # Jar dosyalarını Java koduna çeviren decompiler (CFR)
-          wget https://github.com/leibnitz27/cfr/releases/download/0.152/cfr-0.152.jar -O cfr.jar
+          wget https://github.com/skylot/jadx/releases/download/v1.4.7/jadx-1.4.7.zip -O jadx.zip
+          unzip jadx.zip -d jadx_tool
+          chmod +x jadx_tool/bin/jadx
 
       - name: Python Ortamı Kurulumu
         uses: actions/setup-python@v4
@@ -124,7 +120,7 @@ jobs:
           os.makedirs(OUTPUT_DIR, exist_ok=True)
 
           def main():
-              print("İndirme, Unzip ve Decompile işlemleri başlıyor...")
+              print("İndirme, Unzip ve JADX ile Decompile işlemleri başlıyor...")
               
               for item in plugin_data:
                   url = item.get("url")
@@ -137,13 +133,13 @@ jobs:
                       temp_cs3 = f"{name}.cs3"
                       temp_dir = f"temp_{name}"
                       
-                      # 1. CS3 (aslında ZIP) dosyasını indir
+                      # 1. CS3 (ZIP) dosyasını indir
                       resp = requests.get(url, timeout=15)
                       if resp.status_code == 200:
                           with open(temp_cs3, "wb") as f:
                               f.write(resp.content)
                           
-                          # 2. ZIP olarak aç ve classes.dex dosyasını bul
+                          # 2. ZIP'i aç ve classes.dex dosyasını çıkar
                           os.makedirs(temp_dir, exist_ok=True)
                           with zipfile.ZipFile(temp_cs3, 'r') as zip_ref:
                               zip_ref.extractall(temp_dir)
@@ -151,20 +147,18 @@ jobs:
                           dex_path = os.path.join(temp_dir, "classes.dex")
                           
                           if os.path.exists(dex_path):
-                              jar_path = f"{name}.jar"
-                              # 3. Dex'i Jar'a çevir
-                              subprocess.run(["sh", "dex2jar/d2j-dex2jar.sh", "-f", dex_path, "-o", jar_path], 
-                                          stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-                              
-                              # 4. Jar'ı Java'ya çevir (CFR kullanarak)
                               out_folder = os.path.join(OUTPUT_DIR, name)
-                              subprocess.run(["java", "-jar", "cfr.jar", jar_path, "--outputdir", out_folder, "--silent", "true"],
-                                          stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
                               
-                              print(f"[BAŞARILI] {name} kodları ayrıştırıldı.")
+                              # 3. classes.dex dosyasını doğrudan JADX aracına teslim et
+                              subprocess.run([
+                                  "./jadx_tool/bin/jadx", 
+                                  "-d", out_folder, 
+                                  "--no-res", 
+                                  "--no-src-storage", 
+                                  dex_path
+                              ], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
                               
-                              # Temizlik
-                              if os.path.exists(jar_path): os.remove(jar_path)
+                              print(f"[BAŞARILI] {name} kodları JADX ile Java'ya ayrıştırıldı.")
                           else:
                               print(f"[HATA] {name} içinde classes.dex bulunamadı!")
                           
