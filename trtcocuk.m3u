@@ -1,32 +1,60 @@
 #EXTM3U
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/14169689.jpeg" group-title="Ser A", Ser A Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/04934ecb-6458-4b77-8c08-d92b20ac97ed/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/14169689.jpeg" group-title="Ser A", SER-a - Kaç Yaşındasın?
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/72e4a13a-3618-4bf6-bf93-61e86eaa02cd/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15433449.jpeg" group-title="Ser A", SER-a - Kaç Yaşındasın?
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/fe8e8bdb-da7c-4b39-a666-b9b77645d065/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/13762474.jpeg" group-title="Ser A", Fanus
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/9033aa02-15ba-4416-955e-a262b0e01069/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16806634.jpeg" group-title="Ser A", Fanus
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/c452c1e8-3505-4a07-8e29-927f674b3bca/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16806620.jpeg" group-title="Ser A", Yeraltı
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/58610704-6479-4d19-af8d-891d10e92277/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/14103496.jpeg" group-title="Ser A", Zamana Karşı
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/f1a75dfe-b198-404c-b3ec-9201d51f18be/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/14103464.jpeg" group-title="Ser A", Agra'nın Peşinde
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/0e3897fb-2b1f-47c5-a1b0-a68759ac1a96/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/14103448.jpeg" group-title="Ser A", İşbirliği
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/f0eac76b-1734-4586-a1b2-328712bf0c62/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/14103405.jpeg" group-title="Ser A", Kıymet
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/80a83c49-e18d-4b4e-8653-313cfe115ebc/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/14103325.jpeg" group-title="Ser A", Empati
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/1bdc8517-9cde-4a95-b5f8-94524b8df5c3/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/13881493.jpeg" group-title="Ser A", Armoni
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/2f2e1423-2686-4a2f-97a5-f6cb1053ec3e/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/13881481.jpeg" group-title="Ser A", Kapsül
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/172ef61d-5fe9-43b6-bc41-e09c731073f8/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/13881475.jpeg" group-title="Ser A", Başlangıç
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/bab382ea-6105-4676-a77b-366c9d117db2/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/18845325_0-0-1278-720.jpeg" group-title="Kehribar Ile Boncuk", Kehribar Ile Boncuk Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/8a7f6c13-89fa-4d08-8210-830171aba356/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17289444.jpeg" group-title="Kehribar Ile Boncuk", Kehribar Ile Boncuk Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/388b09b7-bbf1-44a1-8048-d4d7ea0bdae5/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16315577.jpeg" group-title="Kehribar Ile Boncuk", Kehribar Ile Boncuk Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/20616bc5-9656-42e6-b520-d812d14bcbc5/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15431905.jpeg" group-title="Kehribar Ile Boncuk", Kehribar Ile Boncuk Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/c76fddf3-83f9-4f33-a77b-373e0290df7b/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15428575.jpeg" group-title="Kehribar Ile Boncuk", Kehribar Ile Boncuk Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/ff4da0e6-73bc-47df-bbc1-2b259faeb1b5/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15377346.jpeg" group-title="Kehribar Ile Boncuk", Bir Gün Boyunca Uyumak
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/6d3ce22e-fe6c-48f1-9730-01aaa8da9fde/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15413069.jpeg" group-title="Kehribar Ile Boncuk", Bir Gün Boyunca Uyumak
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/7b85c055-e183-45c6-a803-969fe4915508/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17095614.jpeg" group-title="Kehribar Ile Boncuk", Profesör  Vakurvrak
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/1017df76-4c87-4be5-aa39-0cb045294814/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21712616-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Sahne Tozu
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/9d49b763-8aa2-4ffc-95b4-192a307278a9/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21712613-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Siyah Beyaz Bir Sabah
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/b6596af7-2949-4125-a235-2c85d39b7102/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21712611-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Ormanya'da Sıcak Gündem
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/e8820d91-cbb6-4070-bef2-620b956f8693/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21712382-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 45. Bölüm - Tozlu Hazineler
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/69add09e-6336-47a1-bd96-235e2d6f6244/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21712379-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 44. Bölüm - Yol Ayrımı
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/9336e60b-69a1-4874-9d77-08d6f391fee8/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21712375-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 43. Bölüm - Sürpriz Onarım
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/1b9d6c38-66c4-433b-89e7-9ebfe46c780e/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21712371-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 42. Bölüm - Unutulan İşler
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/4d71dee6-2b04-4212-920d-d7af7b360608/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21712354-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 41. Bölüm - Rüya Gibi Bir Gerçek
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/d90aeb10-1b40-4912-8197-3af6a3dc4f45/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21711845-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 40. Bölüm - Hiper Uzay Modüllü Çanak Anten Sistemi
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/2ebfd3df-5a60-4002-88af-54eddf6921f5/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21711790-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 39. Bölüm - Zümrüt Neredesin?
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/16cf767d-0953-48ef-9b8d-def5629ef94f/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21711741-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 38. Bölüm - Kayıp Kitapların Sırrı
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/90db1746-76ee-471b-b3c6-abf5150edeab/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/whatsapp-image-2026-04-10-at-100123-21711174-0-0-1599-900.jpeg" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 37. Bölüm - Biraderler Spor Salonu
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/b8201965-1e15-4746-8553-5cb941ca505f/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21675142-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 35. Bölüm - Daha Önce Görülmemiş Ayakkabılar
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/e1b790e2-36a5-4561-969d-6e4c6a474fba/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21245681-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 34.Bölüm - Pekfikir'in Alışılmadık Şemsiyeleri
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/bd947d33-9933-4b3c-83a7-8dab6ea9e931/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21245679-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 33.Bölüm - Her Derde Deva Sarmaşığı
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/f98d566e-952f-417c-800e-5d4eddb75ada/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21245666-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 32. Bölüm - Çöldeki Çığlık
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/ed550e08-f8c9-4b4e-9599-234437a8ed33/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21157636-1-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 30. Bölüm - Bir Anda Gelen Ün
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/a2968881-696d-4033-8058-24b612d57f75/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21157621-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 29. Bölüm - Beklenen Konser
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/5894410b-b4a0-4a53-8a20-a21cd2b66537/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21157446-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 28. Bölüm - Sulu Şimşek Hortumu
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/ef800e8b-ceee-4198-aa2b-8557335d1a57/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21157439-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 27. Bölüm - Mahalledeki Gizem
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/7a5fea4a-056e-4026-b6b8-0a0ffd1c8c8b/master.m3u8
 #EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/8378698.jpeg" group-title="Ibi", Ibi Bölümü
 https://cdn-v.pr.trt.com.tr/trtcocuk/website/f6c41163-3e4a-48cc-978e-cc204299b04f/master.m3u8
 #EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/8378653.jpeg" group-title="Ibi", Ibi Bölümü
@@ -95,162 +123,52 @@ https://cdn-v.pr.trt.com.tr/trtcocuk/website/73781aea-c683-430a-8521-9ee86e7a85a
 https://cdn-v.pr.trt.com.tr/trtcocuk/website/e324c032-4e7f-47c3-b664-514420e0170d/master.m3u8
 #EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/8525339.jpeg" group-title="Ibi", İbi 87
 https://cdn-v.pr.trt.com.tr/trtcocuk/website/1dfb0c23-256b-43e5-af57-20e1a08888f9/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17095586.jpeg" group-title="Ibi Galaktik Seruven", Ibi Galaktik Seruven Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/53158a42-9de3-402b-ae14-c7c95ccdab12/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20855595-0-0-1278-720.png" group-title="Ibi Galaktik Seruven", Toran Kuzey Kutbu
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/97806ed2-0595-4cd3-b8d2-4ff9aa9def6a/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20855559-0-0-1278-720.png" group-title="Ibi Galaktik Seruven", Dokar Gezegeni
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/05a73012-72e9-44cf-9ef9-9378329dffed/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20855536-0-0-1278-720.png" group-title="Ibi Galaktik Seruven", İbi Galaktik Serüven 9. Bölüm - Ponko Köyü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/1b47c71c-75ac-494d-91e0-cb68cdc4ffde/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20855524-0-0-1278-720.png" group-title="Ibi Galaktik Seruven", İbi Galaktik Serüven 8. Bölüm - Volkan Parkı
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/78ce0a97-b132-46bc-aea7-f7b1e509d916/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20855521-0-0-1278-720.png" group-title="Ibi Galaktik Seruven", İbi Galaktik Serüven 7. Bölüm - Göçebe Gemisi
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/98610f11-12a4-46ce-9cd9-3c58e2092bee/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17314403.jpeg" group-title="Ibi Galaktik Seruven", İbi Galaktik Serüven 6. Bölüm - Sonsuzluk Oteli
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/2f2d1ae8-ff70-4870-8c88-3b5bb9f8343e/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17314395.jpeg" group-title="Ibi Galaktik Seruven", İbi Galaktik Serüven 5. Bölüm - Arbo Gezegeni
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/5b69ba1c-70ec-495f-8963-8719325e434d/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17193232.jpeg" group-title="Ibi Galaktik Seruven", İbi Galaktik Serüven 4. Bölüm - Yerçekimsiz Pazar
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/90dd62c7-4dd4-40de-9ef8-cb5be25446a2/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17193219.jpeg" group-title="Ibi Galaktik Seruven", İbi Galaktik Serüven 3. Bölüm - Gizli Sığınak
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/27a3a543-9895-46d7-8788-8ab47d27aa7c/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17144004.jpeg" group-title="Ibi Galaktik Seruven", İbi Galaktik Serüven 2. Bölüm - Uzayın Derinliklerinde
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/5b1d033b-742f-478a-bfe4-6f1e13c78e01/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17138091.jpeg" group-title="Ibi Galaktik Seruven", İbi Galaktik Serüven 1. Bölüm- Fura Gezegeni
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/c1515398-116f-4a0a-9b5d-0c91bb7de5bc/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21735325-0-0-1917-1080.png" group-title="Ruzgar Gulu", 7 Ağustos 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/6a6992e9-5d20-4640-9f8a-a1a9a979787e/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21735267-0-0-1917-1080.png" group-title="Ruzgar Gulu", 6 Ağustos 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/f1ff7d9b-888a-4cb3-9872-60ae23cd011b/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21735244-0-0-1917-1080.png" group-title="Ruzgar Gulu", 5 Ağustos 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/67702da7-2ed9-4fea-a5d6-eedc8627d431/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21735198-0-0-1917-1080.png" group-title="Ruzgar Gulu", 4 Ağustos 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/9efeb9d4-1dec-4d93-809c-d5d01ee36f13/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21734829-0-0-1917-1080.png" group-title="Ruzgar Gulu", 30 Temmuz 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/708a791b-3a58-4e3e-9247-7e5f9c5051ba/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21734895-0-0-1917-1080.png" group-title="Ruzgar Gulu", 29 Temmuz 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/11451b5a-1f51-4843-a955-ed8177c31268/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21734717-0-0-1917-1080.png" group-title="Ruzgar Gulu", 28 Temmuz 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/053d3f8e-2716-4883-bf90-11bfaa16c30d/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21734700-0-0-1917-1080.png" group-title="Ruzgar Gulu", 27 Temmuz 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/401671cb-461d-40e8-b6a1-64bc7131894f/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729943-0-0-1917-1080.png" group-title="Ruzgar Gulu", 29 Haziran 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/3279d625-4dcb-4a28-aa22-9bec2c974469/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729941-0-0-1917-1080.png" group-title="Ruzgar Gulu", 26 Haziran 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/f757f025-2d1d-4250-a1d1-4c267f37b19f/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729932-0-0-1917-1080.png" group-title="Ruzgar Gulu", 25 Haziran 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/70f1f680-b765-4828-b840-abfb3b0c9b4d/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729723-0-0-1917-1080.png" group-title="Ruzgar Gulu", 24 Haziran 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/b2ab7c45-9f59-4e73-82c1-b10c348b57cc/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729721-0-0-1917-1080.png" group-title="Ruzgar Gulu", 23 Haziran 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/3d5c5d3d-11f1-4783-8373-3562c88d871a/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21728632-0-0-1917-1080.png" group-title="Ruzgar Gulu", Rüzgar Gülü - 19 Haziran 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/731e4c9e-d142-4ef9-a243-42b9d0274d35/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21728630-0-0-1917-1080.png" group-title="Ruzgar Gulu", Rüzgar Gülü - 18 Haziran 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/907fffc5-58be-4008-8c48-fe5a09605e64/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21727771-0-0-1917-1080.png" group-title="Ruzgar Gulu", Rüzgar Gülü - 17 Haziran 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/1dd2097d-2868-41a9-809f-abfb03f9907e/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21727768-0-0-1917-1080.png" group-title="Ruzgar Gulu", Rüzgar Gülü - 16 Haziran 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/89c79861-d272-4134-99af-8bccbcea526c/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21725439-0-0-1917-1080.png" group-title="Ruzgar Gulu", Rüzgar Gülü - 15 Haziran 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/cee90125-44aa-4634-9dd5-025a432a11a2/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21725363-0-0-1917-1080.png" group-title="Ruzgar Gulu", Rüzgar Gülü - 12 Haziran 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/a29b5827-c4b4-4593-9ab0-475d47bebb4f/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21725361-0-0-1917-1080.png" group-title="Ruzgar Gulu", Rüzgar Gülü - 11 Haziran 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/36cce3e2-a202-47e7-a3cc-e65f923506c3/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15574760.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/c26b837e-2b3e-4ca0-8674-3f1fb9421f01/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15574894.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/af3230a0-45ea-4680-820c-c8d9e1f8d705/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9237163.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/80ed6d11-a96a-4e14-96cf-d26ab23ac616/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9237246.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/dd76bf4a-6c99-46d7-8ec0-c785a9fc5168/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9237311.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/234c1014-bf7e-4b3e-a133-56f72e847c8f/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9237507.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/35fb90b4-8de5-475e-b1f1-a4e7341321e3/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21613311-0-0-1917-1080.png" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/9807fc6f-3760-4a58-8882-1ed6a4b9776b/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21613311-0-0-1917-1080.png" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/ed7bf01b-2ba0-4477-b31d-b9bb66a7c0a2/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20884043-262-0-1523-858.png" group-title="Rafadan Tayfa", Rafadan Tayfa: Kapadokya 27 Aralık’ta Sinemalarda
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/b6109520-d0b9-4a97-943f-6cd3fc9f3566/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/12420524.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa: Kapadokya 27 Aralık’ta Sinemalarda
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/bec4514b-8b41-49fc-b866-3e9730a26445/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10106435.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/986195f2-6206-4e1c-99e9-b37ef01bb5f1/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15440233_0-0-1917-1080.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/a59c6be6-f041-4d8f-bbf4-b118d0f07fd2/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9204085.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/ce721f5d-6efc-4669-962c-9b5a0c68be7b/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16111421.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/17458342-6293-40ca-8be1-6cf34acdebb7/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16587637.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/acd2d5bf-e1e4-4418-a1d4-a34347137dd7/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9237434.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/218d4dcf-f7fc-4535-baf0-dbb54a43e4de/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9237626.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/ac534e23-1ed6-4489-802e-6deb39cf213c/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9237729.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/930446d2-c20e-4b05-926f-0e0489228b5c/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9237887.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/fcbfd675-099e-438b-961c-df4c9a689290/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9237989.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/2ef917e7-14ec-4714-b442-8acf9c10a40c/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9237944.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/408721c1-8487-462e-beca-772ea6fde28f/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9203538.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/903e4276-4dc7-408d-8b12-676d3561dd55/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9203819.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/3fb7ac5c-a750-456e-8010-10c2d6ab43b1/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9203996.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/daa434c5-ba77-467d-9f64-95d6043bad41/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9203958.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/df89e8f8-1408-4916-b7ab-7ec4fd27f77f/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/11508739_219-121-1481-833.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/f151586a-95ef-44b1-849e-305b2425e895/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10446464.jpeg" group-title="Rafadan Tayfa", Rafadan Kuşu
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/f25ee5e0-ae3a-4318-a1f7-495dd790e3fc/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10446450.jpeg" group-title="Rafadan Tayfa", Enerji Muhafızları
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/0270292a-83a1-4aa9-8037-41b109f807b7/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697643.jpeg" group-title="Rafadan Tayfa", Hayvan Geçidi
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/d4996f3c-4d56-4bdb-a59b-629fc9aa7449/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697640.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 109
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/b780143b-b9dc-4a4f-a555-b433425bc422/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10446446.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 108
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/0c2e952d-c52b-4135-a562-d39dc4ca3b92/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697637.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 107
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/3c3ec219-9050-423b-aad9-0e80fde5517c/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/19992970_0-0-1278-720.png" group-title="Rafadan Tayfa", Rafadan Tayfa 106
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/315bf3e9-df46-4454-9333-8e1dbad15159/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697634.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 105
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/4f896d00-a6a4-4fc7-9dba-2fe43e29e5b9/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697631.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 104
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/df3a4c89-9b6a-409c-bf89-468eab616a25/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697619.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 103
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/dfc8ebf2-840e-4d98-ace4-dee3f367e289/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10446411.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 102
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/35787282-117c-4913-ac7d-ab105fa7bfcf/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697601.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 101
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/11591ded-47ee-45db-9c37-015036ae4529/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15430256.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 100
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/f6d7a82b-d6a4-4e49-939f-79f052bf1df1/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697589.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 99
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/3b39f134-1f11-4b8e-849b-750bbc7f89e7/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697577.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 98
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/35bedbb1-cbef-44f9-8f9f-4e5148537de7/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697575.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 97
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/c6b2c71e-1c06-4814-845e-657b1dee9608/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697574.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 96
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/44935ba6-03d9-4354-937f-9f4178e2bac3/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697569.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 95
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/ff3ac75a-5204-4b56-98c6-ebfa2cadd380/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697565.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 94
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/b965c62f-db5f-41c0-9c98-0c0c93a34c5b/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697527.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 93
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/5f14711f-75d4-469a-89db-e54661079f60/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15697048.jpeg" group-title="Cocukcuf", Cocukcuf Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/df93f33e-cf21-49ea-9d1c-49f6b26c9a8a/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15672650.jpeg" group-title="Cocukcuf", Cocukcuf Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/4da0110b-8e48-4a49-adb3-c634561ea9ed/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17095581.jpeg" group-title="Cocukcuf", Cocukcuf Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/6470812e-e1be-4238-8534-cc4c43563c16/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729999-0-0-1278-720.png" group-title="Cocukcuf", Biriktirmenin Mutluluğu
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/3eb5dc21-28e7-4f35-842a-ffc53c2f0791/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729996-0-0-1278-720.png" group-title="Cocukcuf", Beş Duyumuz
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/497c4494-effd-4240-b258-b6306bd041c9/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729993-0-0-1278-720.png" group-title="Cocukcuf", Adresini Biliyor Musun?
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/18fea6bb-eb83-43b3-a2e1-83f634c8a579/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729990-0-0-1278-720.png" group-title="Cocukcuf", Kaybetmek de Var
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/01eeba40-28bc-4796-bfef-f9a177c6b450/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729986-0-0-1278-720.png" group-title="Cocukcuf", Geri Dönüşüm
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/7cfd3083-05b9-4f3b-be86-3f6d7ec6a4df/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729982-0-0-1278-720.png" group-title="Cocukcuf", Zıtlıklar
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/9f942aa5-310a-4059-b541-efa467a10003/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729979-0-0-1278-720.png" group-title="Cocukcuf", Bal Gibi Olur
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/5c5d561b-0463-4949-9a86-1badea18017b/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729977-0-0-1278-720.png" group-title="Cocukcuf", Ormanın Akciğerleri
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/a2e3153a-8f9f-4ad8-8edf-392f0cbac205/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729974-0-0-1278-720.png" group-title="Cocukcuf", Akrabalar
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/ea84374c-b5be-4378-9d91-12e41c630f19/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21492571-0-0-1278-720.png" group-title="Cocukcuf", Çocukçuf 49.Bölüm - Öz Bakım Mutluluktur
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/3fe1ab13-e2a2-4ce3-aea1-d456b2ee46ab/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21492568-0-0-1278-720.png" group-title="Cocukcuf", Çocukçuf 48.Bölüm - Mutlu Mimarlar
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/60a81964-dbba-48ac-ae01-77c88eadb5ac/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21491089-0-0-1278-720.png" group-title="Cocukcuf", Çocukçuf 47.Bölüm - Hobiler
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/24ae968a-907f-4427-98f2-2937d51a8443/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21431585-0-0-1278-720.png" group-title="Cocukcuf", ÇocukÇUF 46. Bölüm - Karlar Düşer
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/d028d40e-c243-494b-beef-3b6e7e63221b/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21431578.jpeg" group-title="Cocukcuf", ÇocukÇUF 45. Bölüm - İlkbahar mı Sonbahar mı?
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/f37f348a-e57a-4c55-9283-c0eadd5aed73/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21431571-0-0-1278-720.png" group-title="Cocukcuf", ÇocukÇUF 44. Bölüm - Hangisi Daha Büyük
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/6aa27e4e-f6f3-41fe-95d8-8f9796b8f4a5/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21409642-0-0-1278-720.png" group-title="Cocukcuf", ÇocukÇUF 43. Bölüm - Kalbimin Kahramanı
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/73501e67-b270-4406-93c9-173c9b7cb7d8/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21397959-0-0-1278-720.png" group-title="Cocukcuf", ÇocukÇUF 42. Bölüm - Mutlu Haberler
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/7e0b14b5-8b39-4200-993f-cb1e5d7575ae/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21397942-0-0-1278-720.png" group-title="Cocukcuf", ÇocukçÇUF 41.Bölüm - Su Altında Neler Var?
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/c3bccd00-56b3-4005-a34b-4b5d7dccab94/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21397728-0-0-1278-720.png" group-title="Cocukcuf", ÇocukÇUF 40. Bölüm - Ne Sıcak Ne Soğuk
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/d07e3d42-7006-4877-83d0-2ef89fba8b3f/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21368140-0-0-1278-720.png" group-title="Cocukcuf", ÇocukÇUF 39. Bölüm - Bu Bir İllüzyon
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/86f455b5-1048-476f-8fa8-6a9f76723447/master.m3u8
 #EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7719446.jpeg" group-title="Aslan", Aslan Bölümü
 https://cdn-v.pr.trt.com.tr/trtcocuk/website/0746acdd-588f-4ce3-8a76-cc26be27aedc/master.m3u8
 #EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15433519.jpeg" group-title="Aslan", Aslan Bölümü
@@ -369,94 +287,104 @@ https://cdn-v.pr.trt.com.tr/trtcocuk/website/e794d496-4464-4922-93d7-6caa1a9317f
 https://cdn-v.pr.trt.com.tr/trtcocuk/website/dcd9d8cd-2b70-4cad-a6af-bc0dd83efe4a/master.m3u8
 #EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/8271026.jpeg" group-title="Aslan", Aslan 118
 https://cdn-v.pr.trt.com.tr/trtcocuk/website/d11aec71-6043-4ad6-898b-b3d9459f4895/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9387524.jpeg" group-title="Trafik Tayfa", Kırmızı Düdük
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/6a7eb446-d0eb-4541-8dac-fb42cc17a4fa/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9387519.jpeg" group-title="Trafik Tayfa", İsimsiz Kahramanlar
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/7310df24-ab21-4e9f-a25a-391fc57238ad/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9387509.jpeg" group-title="Trafik Tayfa", Gece Sürüşü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/d95d90c1-f55c-4d27-a9b2-78f51e0464c1/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9364293.jpeg" group-title="Trafik Tayfa", Rafadan Servis
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/58622e83-5aaf-4528-b124-680dda25ed5d/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9387497.jpeg" group-title="Trafik Tayfa", Trafik Tayfa 9. Bölüm
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/1aea6436-8be7-454f-99a5-404db0a64090/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9364051.jpeg" group-title="Trafik Tayfa", Trafik Tayfa 8. Bölüm
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/3daa588f-d5c1-424f-8200-e90ec1876570/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9364024.jpeg" group-title="Trafik Tayfa", Trafik Tayfa 6. Bölüm
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/66ac3af3-fd46-415d-b731-e5cf97286214/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9363931.jpeg" group-title="Trafik Tayfa", Trafik Tayfa  5. Bölüm
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/a14e8402-9ad4-4a4d-a1ed-56e5458365dc/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9363914.jpeg" group-title="Trafik Tayfa", Trafik Tayfa 4. Bölüm
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/f8790888-9b04-4267-b135-13c6a96a9bb0/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9363903.jpeg" group-title="Trafik Tayfa", Trafik Tayfa 3. Bölüm
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/971b71a8-d001-42da-9df6-0da7ae531967/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9363879.jpeg" group-title="Trafik Tayfa", Trafik Tayfa 2. Bölüm
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/34fa146f-b408-485b-9018-af50c8e0e126/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9363842.jpeg" group-title="Trafik Tayfa", Trafik Tayfa 1. Bölüm
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/8abf7f1a-0c02-4a4c-9f58-f8bc9590c210/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10222235.jpeg" group-title="Dijital Tayfa", Drone Yarışları
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/09ab3bd5-b78b-4231-84f2-fcfbb2d979fe/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10222226.jpeg" group-title="Dijital Tayfa", Oltaya Dikkat
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/fd791388-fc4e-4875-bb50-ebf5fc25f4bc/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10222216.jpeg" group-title="Dijital Tayfa", Genç Mucit
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/cc33015d-475e-4ec2-83e8-523c37a1c01f/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10222208.jpeg" group-title="Dijital Tayfa", Geleceğin Meslekleri
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/ba0848de-fccd-4a09-ad87-3a940ecf685b/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10222205.jpeg" group-title="Dijital Tayfa", Dijital Tayfa 6
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/3c49cbcc-b43f-4dfc-bf41-bb35008d30b4/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10222203.jpeg" group-title="Dijital Tayfa", Dijital Tayfa 5
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/31e5ad70-9638-4220-bceb-9e9983a2b0f0/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10222185.jpeg" group-title="Dijital Tayfa", Dijital Tayfa 4
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/d05916b1-bd1f-4d3c-a528-1a54381bb06f/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10222178.jpeg" group-title="Dijital Tayfa", Dijital Tayfa 3
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/c88873f2-3c23-42db-9242-5abe4673ddbd/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10222172.jpeg" group-title="Dijital Tayfa", Dijital Tayfa 2
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/56604a26-132e-4107-b886-bd66d5f745ba/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10222166.jpeg" group-title="Dijital Tayfa", Dijital Tayfa 1
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/9fe8bac6-e708-4601-a826-a124142c9300/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/14170462.jpeg" group-title="Aslanin Deney Odasi", Aslanin Deney Odasi Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/25dc0ef8-f9d5-43e1-aab7-7dc0e924cedf/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/13595203.jpeg" group-title="Aslanin Deney Odasi", Aslanin Deney Odasi Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/9de9f7d4-7dc3-4a4a-a331-f17023f319b7/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20826828-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Hangisi Daha Çabuk Donar?
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/f2bd9ffc-890d-4636-b3b1-dace63075023/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20826824-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Kanın Yolculuğu
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/e4bdb566-f76e-462e-b70a-bf8a83d77504/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20826810-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Dayanıklı Köprüler
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/69e5e77e-a32f-4c7e-bcc4-ccfc838dc71f/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20826776-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 60. Bölüm - Gezegenlerin Hareketi
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/3a4d8b4c-2392-4819-b590-24fa0b030896/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20826753.jpeg" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 59. Bölüm - Değişmeyen Su Seviyesi
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/dcc7e9f6-c824-4daf-b9ea-6aeb4c2a293c/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20813573-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 58. Bölüm - Değişmeyen Su Seviyesi
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/e55f8a3e-c664-428d-9d21-c2ac59b7f76f/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20813567-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 57. Bölüm - Uzay Karanlıksa Gökyüzü Neden Mavi?
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/825ba6b7-e0bf-4b00-b88b-836a65f82708/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20813542-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 56. Bölüm - Ağaçlar Erozyonu Nasıl Önlüyor?
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/8a2b0070-35f5-4614-b46f-ba856ff77b57/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20813527-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 55. Bölüm - Yıkılmaz Kumdan Kale
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/09205804-0035-482d-8c8b-250b5ba7c0f2/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20813524-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 54. Bölüm - Küf Deneyi
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/a474e968-4bc5-44a9-a512-6953bc2e131e/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20813515-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 53. Bölüm - Ay'ın Lekeleri
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/11e05145-1bab-4d00-915e-355389445814/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20813502-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 52. Bölüm - Zararsız Plastik
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/1d2a00b5-8bf7-480d-b8c1-9b3d546a6037/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20744569-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 51. Bölüm - Ev Yapımı Boya
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/bcdaa870-2fab-4221-86b8-112b6f5dd7e8/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20744526-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 50. Bölüm - Gölge Boyu
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/46df9778-26fa-4428-8193-2c977041a379/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20744518-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 49. Bölüm - Roketler Nasıl Uçar
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/deb511e6-cbc7-43aa-942c-a028d60009b5/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20744509-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 48. Bölüm - Güneş ve Ay Tutulması
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/ccdb6d8d-97f5-48e9-9a5d-e9743beae7ee/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20744507-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 47. Bölüm - Görünmezlik Deneyi
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/07ef2125-7127-4a0f-bf19-44798c1a37b1/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20744233-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 46. Bölüm - Asit Silgisi
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/34122e7e-b651-4810-a843-e5e587c01376/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17183232.jpeg" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 45. Bölüm - Yüzey Alanı Nedir?
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/ec561fde-b2bc-45b9-9669-6120c7e47387/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17183225.jpeg" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 44. Bölüm - Yapraklarda Neden Su Damlası Olur?
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/d2200262-47c2-4bea-a846-3a7d9202e54c/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/14169689.jpeg" group-title="Ser A", Ser A Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/04934ecb-6458-4b77-8c08-d92b20ac97ed/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/14169689.jpeg" group-title="Ser A", SER-a - Kaç Yaşındasın?
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/72e4a13a-3618-4bf6-bf93-61e86eaa02cd/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15433449.jpeg" group-title="Ser A", SER-a - Kaç Yaşındasın?
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/fe8e8bdb-da7c-4b39-a666-b9b77645d065/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/13762474.jpeg" group-title="Ser A", Fanus
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/9033aa02-15ba-4416-955e-a262b0e01069/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16806634.jpeg" group-title="Ser A", Fanus
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/c452c1e8-3505-4a07-8e29-927f674b3bca/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16806620.jpeg" group-title="Ser A", Yeraltı
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/58610704-6479-4d19-af8d-891d10e92277/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/14103496.jpeg" group-title="Ser A", Zamana Karşı
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/f1a75dfe-b198-404c-b3ec-9201d51f18be/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/14103464.jpeg" group-title="Ser A", Agra'nın Peşinde
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/0e3897fb-2b1f-47c5-a1b0-a68759ac1a96/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/14103448.jpeg" group-title="Ser A", İşbirliği
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/f0eac76b-1734-4586-a1b2-328712bf0c62/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/14103405.jpeg" group-title="Ser A", Kıymet
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/80a83c49-e18d-4b4e-8653-313cfe115ebc/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/14103325.jpeg" group-title="Ser A", Empati
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/1bdc8517-9cde-4a95-b5f8-94524b8df5c3/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/13881493.jpeg" group-title="Ser A", Armoni
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/2f2e1423-2686-4a2f-97a5-f6cb1053ec3e/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/13881481.jpeg" group-title="Ser A", Kapsül
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/172ef61d-5fe9-43b6-bc41-e09c731073f8/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/13881475.jpeg" group-title="Ser A", Başlangıç
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/bab382ea-6105-4676-a77b-366c9d117db2/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7719778.jpeg" group-title="Doru", Doru Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/13a26b8f-3d3e-41f0-8cf4-f02d338b7bb3/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15377355.jpeg" group-title="Doru", Muhtar Uçuyor!
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/7b93d395-067c-4fda-aa3b-a052b13bbce9/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/14761354.jpeg" group-title="Doru", Muhtar Uçuyor!
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/c7d863af-9619-4374-ad98-2b162816eb21/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17182805.jpeg" group-title="Doru", Her Şeye Rağmen
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/969e8308-3953-4332-b628-aed352eae999/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17137469.jpeg" group-title="Doru", Moya'nın Foyası
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/b7516da6-797c-45cb-ad30-c9caeb027707/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17137467.jpeg" group-title="Doru", Gizemli Çanta
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/2d0786ec-6436-4d81-8a81-b4fecb4346a2/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17107518.jpeg" group-title="Doru", Aile Özlemi
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/d599a233-7208-4406-b4c9-4810c40c504c/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17107523.jpeg" group-title="Doru", Doru 80. Bölüm - Yeni Tuzak
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/6191efc3-5fd4-4613-b41c-269d0fec3a34/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17102561.jpeg" group-title="Doru", Doru 79. Bölüm - Kaju Gitmeli
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/458f7c8c-cc7d-428e-9268-2ad77a92f4bb/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17095697.jpeg" group-title="Doru", Doru 78. Bölüm - Koca Sürpriz Kaju
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/f8b6ed0b-8aa8-45e3-91fb-b90ed906f6bd/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16365338.jpeg" group-title="Doru", Doru 77. Bölüm - Ya Vadi Ya Dostlarınız
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/06e787eb-a4e8-47a5-944d-37584bf4abf0/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16365370.jpeg" group-title="Doru", Doru 76. Bölüm - Merhaba Hulusi Ben
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/52e935d0-0abd-4f17-9431-49c360d1aa5a/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16370614.jpeg" group-title="Doru", Doru 75. Bölüm - Oyuncak Kral
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/514db22a-59e2-4268-ae45-484751e207d5/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16370626.jpeg" group-title="Doru", Doru 74. Bölüm - Krallığıma Hoş Geldin!
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/1c3a2663-6147-45b6-80e9-5181785fa88b/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16370646.jpeg" group-title="Doru", Doru 73. Bölüm - Şehirden Ormana, Moya...
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/341b6237-86c3-491c-aae0-f8e18d20c630/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16359949.jpeg" group-title="Doru", Doru 72. Bölüm - Gecenin Gizemi
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/35734b59-73af-4298-bbe1-6d36735a9ec9/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16370702.jpeg" group-title="Doru", Doru 72. Bölüm - Efsanevi Bal
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/973c3ca5-be8d-4828-9a93-b3b5c088721d/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15373775.jpeg" group-title="Doru", Doru 71. Bölüm - Yeni Dostlar Yeni Aile
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/93083182-bb0e-4bbb-9daf-a9acc6a062a0/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15373774.jpeg" group-title="Doru", Doru 70. Bölüm - Herkes Nerede?
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/d3630c12-d33f-481f-9efc-06a0f481542f/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15373771.jpeg" group-title="Doru", Doru 68. Bölüm - Dostluk Köprüsü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/fa830764-9be0-44da-bb5c-350fc6f90731/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15373769.jpeg" group-title="Doru", Doru 67. Bölüm - Gök Dağlar
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/ebf6cfc9-6a18-40b0-9459-c9821846090b/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15373767.jpeg" group-title="Doru", Doru 66. Bölüm - Su Taşkını
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/c07f56ae-5b11-4812-804b-8956bbd324c3/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15373765.jpeg" group-title="Doru", Doru 65. Bölüm - İyi Ki Doğdun...
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/1b5f4f2f-8c2a-4143-9f3b-0348eebbc87e/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17095586.jpeg" group-title="Ibi Galaktik Seruven", Ibi Galaktik Seruven Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/53158a42-9de3-402b-ae14-c7c95ccdab12/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20855595-0-0-1278-720.png" group-title="Ibi Galaktik Seruven", Toran Kuzey Kutbu
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/97806ed2-0595-4cd3-b8d2-4ff9aa9def6a/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20855559-0-0-1278-720.png" group-title="Ibi Galaktik Seruven", Dokar Gezegeni
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/05a73012-72e9-44cf-9ef9-9378329dffed/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20855536-0-0-1278-720.png" group-title="Ibi Galaktik Seruven", İbi Galaktik Serüven 9. Bölüm - Ponko Köyü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/1b47c71c-75ac-494d-91e0-cb68cdc4ffde/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20855524-0-0-1278-720.png" group-title="Ibi Galaktik Seruven", İbi Galaktik Serüven 8. Bölüm - Volkan Parkı
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/78ce0a97-b132-46bc-aea7-f7b1e509d916/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20855521-0-0-1278-720.png" group-title="Ibi Galaktik Seruven", İbi Galaktik Serüven 7. Bölüm - Göçebe Gemisi
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/98610f11-12a4-46ce-9cd9-3c58e2092bee/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17314403.jpeg" group-title="Ibi Galaktik Seruven", İbi Galaktik Serüven 6. Bölüm - Sonsuzluk Oteli
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/2f2d1ae8-ff70-4870-8c88-3b5bb9f8343e/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17314395.jpeg" group-title="Ibi Galaktik Seruven", İbi Galaktik Serüven 5. Bölüm - Arbo Gezegeni
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/5b69ba1c-70ec-495f-8963-8719325e434d/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17193232.jpeg" group-title="Ibi Galaktik Seruven", İbi Galaktik Serüven 4. Bölüm - Yerçekimsiz Pazar
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/90dd62c7-4dd4-40de-9ef8-cb5be25446a2/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17193219.jpeg" group-title="Ibi Galaktik Seruven", İbi Galaktik Serüven 3. Bölüm - Gizli Sığınak
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/27a3a543-9895-46d7-8788-8ab47d27aa7c/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17144004.jpeg" group-title="Ibi Galaktik Seruven", İbi Galaktik Serüven 2. Bölüm - Uzayın Derinliklerinde
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/5b1d033b-742f-478a-bfe4-6f1e13c78e01/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17138091.jpeg" group-title="Ibi Galaktik Seruven", İbi Galaktik Serüven 1. Bölüm- Fura Gezegeni
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/c1515398-116f-4a0a-9b5d-0c91bb7de5bc/master.m3u8
 #EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17891322.jpeg" group-title="Sagun", Sagun Bölümü
 https://cdn-v.pr.trt.com.tr/trtcocuk/website/fd8a691d-a591-4b02-a092-2bcb0a2cc1d2/master.m3u8
 #EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/14760600.jpeg" group-title="Sagun", Sagun Bölümü
@@ -505,52 +433,46 @@ https://cdn-v.pr.trt.com.tr/trtcocuk/website/4d1db28d-abc9-4594-bc95-cef8b93ca3d
 https://cdn-v.pr.trt.com.tr/trtcocuk/website/b9c51d44-7b4f-41c5-91c1-85f6cb53c15b/master.m3u8
 #EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/14788226.jpeg" group-title="Sagun", Sagun 7.Bölüm - Baraj
 https://cdn-v.pr.trt.com.tr/trtcocuk/website/1408f235-e724-4ed9-a522-c98d86f34027/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15697048.jpeg" group-title="Cocukcuf", Cocukcuf Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/df93f33e-cf21-49ea-9d1c-49f6b26c9a8a/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15672650.jpeg" group-title="Cocukcuf", Cocukcuf Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/4da0110b-8e48-4a49-adb3-c634561ea9ed/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17095581.jpeg" group-title="Cocukcuf", Cocukcuf Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/6470812e-e1be-4238-8534-cc4c43563c16/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729999-0-0-1278-720.png" group-title="Cocukcuf", Biriktirmenin Mutluluğu
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/3eb5dc21-28e7-4f35-842a-ffc53c2f0791/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729996-0-0-1278-720.png" group-title="Cocukcuf", Beş Duyumuz
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/497c4494-effd-4240-b258-b6306bd041c9/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729993-0-0-1278-720.png" group-title="Cocukcuf", Adresini Biliyor Musun?
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/18fea6bb-eb83-43b3-a2e1-83f634c8a579/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729990-0-0-1278-720.png" group-title="Cocukcuf", Kaybetmek de Var
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/01eeba40-28bc-4796-bfef-f9a177c6b450/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729986-0-0-1278-720.png" group-title="Cocukcuf", Geri Dönüşüm
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/7cfd3083-05b9-4f3b-be86-3f6d7ec6a4df/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729982-0-0-1278-720.png" group-title="Cocukcuf", Zıtlıklar
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/9f942aa5-310a-4059-b541-efa467a10003/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729979-0-0-1278-720.png" group-title="Cocukcuf", Bal Gibi Olur
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/5c5d561b-0463-4949-9a86-1badea18017b/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729977-0-0-1278-720.png" group-title="Cocukcuf", Ormanın Akciğerleri
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/a2e3153a-8f9f-4ad8-8edf-392f0cbac205/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729974-0-0-1278-720.png" group-title="Cocukcuf", Akrabalar
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/ea84374c-b5be-4378-9d91-12e41c630f19/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21492571-0-0-1278-720.png" group-title="Cocukcuf", Çocukçuf 49.Bölüm - Öz Bakım Mutluluktur
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/3fe1ab13-e2a2-4ce3-aea1-d456b2ee46ab/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21492568-0-0-1278-720.png" group-title="Cocukcuf", Çocukçuf 48.Bölüm - Mutlu Mimarlar
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/60a81964-dbba-48ac-ae01-77c88eadb5ac/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21491089-0-0-1278-720.png" group-title="Cocukcuf", Çocukçuf 47.Bölüm - Hobiler
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/24ae968a-907f-4427-98f2-2937d51a8443/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21431585-0-0-1278-720.png" group-title="Cocukcuf", ÇocukÇUF 46. Bölüm - Karlar Düşer
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/d028d40e-c243-494b-beef-3b6e7e63221b/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21431578.jpeg" group-title="Cocukcuf", ÇocukÇUF 45. Bölüm - İlkbahar mı Sonbahar mı?
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/f37f348a-e57a-4c55-9283-c0eadd5aed73/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21431571-0-0-1278-720.png" group-title="Cocukcuf", ÇocukÇUF 44. Bölüm - Hangisi Daha Büyük
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/6aa27e4e-f6f3-41fe-95d8-8f9796b8f4a5/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21409642-0-0-1278-720.png" group-title="Cocukcuf", ÇocukÇUF 43. Bölüm - Kalbimin Kahramanı
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/73501e67-b270-4406-93c9-173c9b7cb7d8/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21397959-0-0-1278-720.png" group-title="Cocukcuf", ÇocukÇUF 42. Bölüm - Mutlu Haberler
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/7e0b14b5-8b39-4200-993f-cb1e5d7575ae/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21397942-0-0-1278-720.png" group-title="Cocukcuf", ÇocukçÇUF 41.Bölüm - Su Altında Neler Var?
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/c3bccd00-56b3-4005-a34b-4b5d7dccab94/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21397728-0-0-1278-720.png" group-title="Cocukcuf", ÇocukÇUF 40. Bölüm - Ne Sıcak Ne Soğuk
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/d07e3d42-7006-4877-83d0-2ef89fba8b3f/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21368140-0-0-1278-720.png" group-title="Cocukcuf", ÇocukÇUF 39. Bölüm - Bu Bir İllüzyon
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/86f455b5-1048-476f-8fa8-6a9f76723447/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21735325-0-0-1917-1080.png" group-title="Ruzgar Gulu", 7 Ağustos 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/6a6992e9-5d20-4640-9f8a-a1a9a979787e/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21735267-0-0-1917-1080.png" group-title="Ruzgar Gulu", 6 Ağustos 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/f1ff7d9b-888a-4cb3-9872-60ae23cd011b/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21735244-0-0-1917-1080.png" group-title="Ruzgar Gulu", 5 Ağustos 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/67702da7-2ed9-4fea-a5d6-eedc8627d431/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21735198-0-0-1917-1080.png" group-title="Ruzgar Gulu", 4 Ağustos 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/9efeb9d4-1dec-4d93-809c-d5d01ee36f13/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21734829-0-0-1917-1080.png" group-title="Ruzgar Gulu", 30 Temmuz 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/708a791b-3a58-4e3e-9247-7e5f9c5051ba/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21734895-0-0-1917-1080.png" group-title="Ruzgar Gulu", 29 Temmuz 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/11451b5a-1f51-4843-a955-ed8177c31268/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21734717-0-0-1917-1080.png" group-title="Ruzgar Gulu", 28 Temmuz 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/053d3f8e-2716-4883-bf90-11bfaa16c30d/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21734700-0-0-1917-1080.png" group-title="Ruzgar Gulu", 27 Temmuz 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/401671cb-461d-40e8-b6a1-64bc7131894f/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729943-0-0-1917-1080.png" group-title="Ruzgar Gulu", 29 Haziran 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/3279d625-4dcb-4a28-aa22-9bec2c974469/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729941-0-0-1917-1080.png" group-title="Ruzgar Gulu", 26 Haziran 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/f757f025-2d1d-4250-a1d1-4c267f37b19f/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729932-0-0-1917-1080.png" group-title="Ruzgar Gulu", 25 Haziran 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/70f1f680-b765-4828-b840-abfb3b0c9b4d/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729723-0-0-1917-1080.png" group-title="Ruzgar Gulu", 24 Haziran 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/b2ab7c45-9f59-4e73-82c1-b10c348b57cc/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729721-0-0-1917-1080.png" group-title="Ruzgar Gulu", 23 Haziran 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/3d5c5d3d-11f1-4783-8373-3562c88d871a/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21728632-0-0-1917-1080.png" group-title="Ruzgar Gulu", Rüzgar Gülü - 19 Haziran 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/731e4c9e-d142-4ef9-a243-42b9d0274d35/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21728630-0-0-1917-1080.png" group-title="Ruzgar Gulu", Rüzgar Gülü - 18 Haziran 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/907fffc5-58be-4008-8c48-fe5a09605e64/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21727771-0-0-1917-1080.png" group-title="Ruzgar Gulu", Rüzgar Gülü - 17 Haziran 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/1dd2097d-2868-41a9-809f-abfb03f9907e/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21727768-0-0-1917-1080.png" group-title="Ruzgar Gulu", Rüzgar Gülü - 16 Haziran 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/89c79861-d272-4134-99af-8bccbcea526c/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21725439-0-0-1917-1080.png" group-title="Ruzgar Gulu", Rüzgar Gülü - 15 Haziran 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/cee90125-44aa-4634-9dd5-025a432a11a2/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21725363-0-0-1917-1080.png" group-title="Ruzgar Gulu", Rüzgar Gülü - 12 Haziran 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/a29b5827-c4b4-4593-9ab0-475d47bebb4f/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21725361-0-0-1917-1080.png" group-title="Ruzgar Gulu", Rüzgar Gülü - 11 Haziran 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/36cce3e2-a202-47e7-a3cc-e65f923506c3/master.m3u8
 #EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/18556719_0-0-1278-720.jpeg" group-title="Ekip Siberay", Ekip: SİBERAY - Ramazan Bayramı Kutlaması
 https://cdn-v.pr.trt.com.tr/trtcocuk/website/08686990-3a90-412e-9f33-818166276a49/master.m3u8
 #EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/18467053_0-0-1917-1080.jpeg" group-title="Ekip Siberay", Ekip: SİBERAY - Ramazan Bayramı Kutlaması
@@ -589,62 +511,206 @@ https://cdn-v.pr.trt.com.tr/trtcocuk/website/edff5619-9be1-45bf-9dad-895e19bf140
 https://cdn-v.pr.trt.com.tr/trtcocuk/website/ba5d2741-44dd-4e46-adf6-a919aad354b0/master.m3u8
 #EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/14975701.jpeg" group-title="Ekip Siberay", Bilgisayar Kulübü
 https://cdn-v.pr.trt.com.tr/trtcocuk/website/d77b328c-0947-4fb1-a516-86faabdbe5aa/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/18845325_0-0-1278-720.jpeg" group-title="Kehribar Ile Boncuk", Kehribar Ile Boncuk Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/8a7f6c13-89fa-4d08-8210-830171aba356/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17289444.jpeg" group-title="Kehribar Ile Boncuk", Kehribar Ile Boncuk Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/388b09b7-bbf1-44a1-8048-d4d7ea0bdae5/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16315577.jpeg" group-title="Kehribar Ile Boncuk", Kehribar Ile Boncuk Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/20616bc5-9656-42e6-b520-d812d14bcbc5/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15431905.jpeg" group-title="Kehribar Ile Boncuk", Kehribar Ile Boncuk Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/c76fddf3-83f9-4f33-a77b-373e0290df7b/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15428575.jpeg" group-title="Kehribar Ile Boncuk", Kehribar Ile Boncuk Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/ff4da0e6-73bc-47df-bbc1-2b259faeb1b5/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15377346.jpeg" group-title="Kehribar Ile Boncuk", Bir Gün Boyunca Uyumak
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/6d3ce22e-fe6c-48f1-9730-01aaa8da9fde/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15413069.jpeg" group-title="Kehribar Ile Boncuk", Bir Gün Boyunca Uyumak
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/7b85c055-e183-45c6-a803-969fe4915508/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17095614.jpeg" group-title="Kehribar Ile Boncuk", Profesör  Vakurvrak
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/1017df76-4c87-4be5-aa39-0cb045294814/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21712616-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Sahne Tozu
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/9d49b763-8aa2-4ffc-95b4-192a307278a9/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21712613-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Siyah Beyaz Bir Sabah
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/b6596af7-2949-4125-a235-2c85d39b7102/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21712611-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Ormanya'da Sıcak Gündem
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/e8820d91-cbb6-4070-bef2-620b956f8693/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21712382-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 45. Bölüm - Tozlu Hazineler
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/69add09e-6336-47a1-bd96-235e2d6f6244/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21712379-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 44. Bölüm - Yol Ayrımı
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/9336e60b-69a1-4874-9d77-08d6f391fee8/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21712375-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 43. Bölüm - Sürpriz Onarım
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/1b9d6c38-66c4-433b-89e7-9ebfe46c780e/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21712371-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 42. Bölüm - Unutulan İşler
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/4d71dee6-2b04-4212-920d-d7af7b360608/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21712354-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 41. Bölüm - Rüya Gibi Bir Gerçek
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/d90aeb10-1b40-4912-8197-3af6a3dc4f45/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21711845-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 40. Bölüm - Hiper Uzay Modüllü Çanak Anten Sistemi
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/2ebfd3df-5a60-4002-88af-54eddf6921f5/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21711790-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 39. Bölüm - Zümrüt Neredesin?
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/16cf767d-0953-48ef-9b8d-def5629ef94f/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21711741-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 38. Bölüm - Kayıp Kitapların Sırrı
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/90db1746-76ee-471b-b3c6-abf5150edeab/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/whatsapp-image-2026-04-10-at-100123-21711174-0-0-1599-900.jpeg" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 37. Bölüm - Biraderler Spor Salonu
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/b8201965-1e15-4746-8553-5cb941ca505f/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21675142-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 35. Bölüm - Daha Önce Görülmemiş Ayakkabılar
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/e1b790e2-36a5-4561-969d-6e4c6a474fba/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21245681-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 34.Bölüm - Pekfikir'in Alışılmadık Şemsiyeleri
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/bd947d33-9933-4b3c-83a7-8dab6ea9e931/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21245679-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 33.Bölüm - Her Derde Deva Sarmaşığı
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/f98d566e-952f-417c-800e-5d4eddb75ada/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21245666-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 32. Bölüm - Çöldeki Çığlık
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/ed550e08-f8c9-4b4e-9599-234437a8ed33/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21157636-1-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 30. Bölüm - Bir Anda Gelen Ün
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/a2968881-696d-4033-8058-24b612d57f75/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21157621-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 29. Bölüm - Beklenen Konser
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/5894410b-b4a0-4a53-8a20-a21cd2b66537/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21157446-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 28. Bölüm - Sulu Şimşek Hortumu
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/ef800e8b-ceee-4198-aa2b-8557335d1a57/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21157439-0-0-1278-720.png" group-title="Kehribar Ile Boncuk", Kehribar ile Boncuk 27. Bölüm - Mahalledeki Gizem
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/7a5fea4a-056e-4026-b6b8-0a0ffd1c8c8b/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21735505-0-0-1917-1080.png" group-title="Haberin Olsun", 25 Temmuz 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/b62ba53d-dd12-4394-8f40-7734b4c00aa1/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21735490-0-0-1917-1080.png" group-title="Haberin Olsun", 24 Temmuz 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/3d779f43-fcc9-4bf7-bd66-dd5708186462/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729945-0-0-1917-1080.png" group-title="Haberin Olsun", 28 Haziran 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/dfb2623a-ad3f-48b0-a09e-60fd0b59aeca/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729031-0-0-1917-1080.png" group-title="Haberin Olsun", 27 Haziran 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/698d4eb2-5200-4d2e-a0ea-42e478166cda/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729028-0-0-1917-1080.png" group-title="Haberin Olsun", 26 Haziran 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/a69ea485-4c83-4d65-a147-122c3877155f/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21727512-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun -21 Haziran 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/f4fd1299-f9d8-4f4e-9351-2182417803dd/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21727511-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun -20 Haziran 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/d4eb6869-bdff-4d33-bfc2-7992f7350458/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21727506-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun -14 Haziran 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/7d1a5e0a-51ea-416d-9cc3-5741ab217e4f/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21725366-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun -13 Haziran 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/dc260e63-9205-4d25-ae56-0541e0a2825f/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21725364-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun -12 Haziran 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/10a467f0-2a79-4d3d-b086-485ad4101cd0/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21722805-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun - 7 Haziran 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/749e6dbe-de31-4051-b9a0-458cd41d1759/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21722807-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun -6 Haziran 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/55e8079c-20dc-43da-9062-3877f14eb294/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21722657-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun - 5 Haziran 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/c8ee02b8-a311-47f6-ab81-83ecca636c25/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21721478-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun - 31 Mayıs 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/6e2a880b-cc55-4625-964b-a924d64bc2a7/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21721477-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun - 30 Mayıs 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/f84590a0-7bf6-4595-87fe-d89f39121f8e/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21721475-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun - 29 Mayıs 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/77656aad-44c6-481e-b859-0c0f8afec7d4/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21721470-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun - 24 Mayıs 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/9b2cfa62-df0f-4d3c-ad02-b4a9dfea7a42/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21721468-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun - 23 Mayıs 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/1bc205d6-55da-407e-8f8a-63b92757f97a/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21721466-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun - 22 Mayıs 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/12f25666-aeea-498f-b093-5e882772e80c/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21721463-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun - 17 Mayıs 2026
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/729a3d06-298b-4ab5-96d7-82960573a626/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15574760.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/c26b837e-2b3e-4ca0-8674-3f1fb9421f01/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15574894.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/af3230a0-45ea-4680-820c-c8d9e1f8d705/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9237163.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/80ed6d11-a96a-4e14-96cf-d26ab23ac616/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9237246.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/dd76bf4a-6c99-46d7-8ec0-c785a9fc5168/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9237311.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/234c1014-bf7e-4b3e-a133-56f72e847c8f/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9237507.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/35fb90b4-8de5-475e-b1f1-a4e7341321e3/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21613311-0-0-1917-1080.png" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/9807fc6f-3760-4a58-8882-1ed6a4b9776b/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21613311-0-0-1917-1080.png" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/ed7bf01b-2ba0-4477-b31d-b9bb66a7c0a2/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20884043-262-0-1523-858.png" group-title="Rafadan Tayfa", Rafadan Tayfa: Kapadokya 27 Aralık’ta Sinemalarda
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/b6109520-d0b9-4a97-943f-6cd3fc9f3566/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/12420524.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa: Kapadokya 27 Aralık’ta Sinemalarda
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/bec4514b-8b41-49fc-b866-3e9730a26445/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10106435.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/986195f2-6206-4e1c-99e9-b37ef01bb5f1/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15440233_0-0-1917-1080.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/a59c6be6-f041-4d8f-bbf4-b118d0f07fd2/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9204085.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/ce721f5d-6efc-4669-962c-9b5a0c68be7b/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16111421.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/17458342-6293-40ca-8be1-6cf34acdebb7/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16587637.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/acd2d5bf-e1e4-4418-a1d4-a34347137dd7/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9237434.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/218d4dcf-f7fc-4535-baf0-dbb54a43e4de/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9237626.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/ac534e23-1ed6-4489-802e-6deb39cf213c/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9237729.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/930446d2-c20e-4b05-926f-0e0489228b5c/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9237887.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/fcbfd675-099e-438b-961c-df4c9a689290/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9237989.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/2ef917e7-14ec-4714-b442-8acf9c10a40c/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9237944.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/408721c1-8487-462e-beca-772ea6fde28f/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9203538.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/903e4276-4dc7-408d-8b12-676d3561dd55/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9203819.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/3fb7ac5c-a750-456e-8010-10c2d6ab43b1/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9203996.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/daa434c5-ba77-467d-9f64-95d6043bad41/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9203958.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/df89e8f8-1408-4916-b7ab-7ec4fd27f77f/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/11508739_219-121-1481-833.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/f151586a-95ef-44b1-849e-305b2425e895/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10446464.jpeg" group-title="Rafadan Tayfa", Rafadan Kuşu
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/f25ee5e0-ae3a-4318-a1f7-495dd790e3fc/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10446450.jpeg" group-title="Rafadan Tayfa", Enerji Muhafızları
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/0270292a-83a1-4aa9-8037-41b109f807b7/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697643.jpeg" group-title="Rafadan Tayfa", Hayvan Geçidi
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/d4996f3c-4d56-4bdb-a59b-629fc9aa7449/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697640.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 109
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/b780143b-b9dc-4a4f-a555-b433425bc422/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10446446.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 108
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/0c2e952d-c52b-4135-a562-d39dc4ca3b92/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697637.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 107
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/3c3ec219-9050-423b-aad9-0e80fde5517c/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/19992970_0-0-1278-720.png" group-title="Rafadan Tayfa", Rafadan Tayfa 106
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/315bf3e9-df46-4454-9333-8e1dbad15159/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697634.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 105
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/4f896d00-a6a4-4fc7-9dba-2fe43e29e5b9/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697631.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 104
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/df3a4c89-9b6a-409c-bf89-468eab616a25/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697619.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 103
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/dfc8ebf2-840e-4d98-ace4-dee3f367e289/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10446411.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 102
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/35787282-117c-4913-ac7d-ab105fa7bfcf/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697601.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 101
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/11591ded-47ee-45db-9c37-015036ae4529/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15430256.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 100
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/f6d7a82b-d6a4-4e49-939f-79f052bf1df1/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697589.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 99
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/3b39f134-1f11-4b8e-849b-750bbc7f89e7/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697577.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 98
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/35bedbb1-cbef-44f9-8f9f-4e5148537de7/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697575.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 97
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/c6b2c71e-1c06-4814-845e-657b1dee9608/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697574.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 96
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/44935ba6-03d9-4354-937f-9f4178e2bac3/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697569.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 95
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/ff3ac75a-5204-4b56-98c6-ebfa2cadd380/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697565.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 94
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/b965c62f-db5f-41c0-9c98-0c0c93a34c5b/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7697527.jpeg" group-title="Rafadan Tayfa", Rafadan Tayfa 93
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/5f14711f-75d4-469a-89db-e54661079f60/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9387524.jpeg" group-title="Trafik Tayfa", Kırmızı Düdük
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/6a7eb446-d0eb-4541-8dac-fb42cc17a4fa/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9387519.jpeg" group-title="Trafik Tayfa", İsimsiz Kahramanlar
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/7310df24-ab21-4e9f-a25a-391fc57238ad/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9387509.jpeg" group-title="Trafik Tayfa", Gece Sürüşü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/d95d90c1-f55c-4d27-a9b2-78f51e0464c1/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9364293.jpeg" group-title="Trafik Tayfa", Rafadan Servis
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/58622e83-5aaf-4528-b124-680dda25ed5d/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9387497.jpeg" group-title="Trafik Tayfa", Trafik Tayfa 9. Bölüm
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/1aea6436-8be7-454f-99a5-404db0a64090/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9364051.jpeg" group-title="Trafik Tayfa", Trafik Tayfa 8. Bölüm
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/3daa588f-d5c1-424f-8200-e90ec1876570/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9364024.jpeg" group-title="Trafik Tayfa", Trafik Tayfa 6. Bölüm
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/66ac3af3-fd46-415d-b731-e5cf97286214/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9363931.jpeg" group-title="Trafik Tayfa", Trafik Tayfa  5. Bölüm
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/a14e8402-9ad4-4a4d-a1ed-56e5458365dc/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9363914.jpeg" group-title="Trafik Tayfa", Trafik Tayfa 4. Bölüm
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/f8790888-9b04-4267-b135-13c6a96a9bb0/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9363903.jpeg" group-title="Trafik Tayfa", Trafik Tayfa 3. Bölüm
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/971b71a8-d001-42da-9df6-0da7ae531967/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9363879.jpeg" group-title="Trafik Tayfa", Trafik Tayfa 2. Bölüm
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/34fa146f-b408-485b-9018-af50c8e0e126/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/9363842.jpeg" group-title="Trafik Tayfa", Trafik Tayfa 1. Bölüm
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/8abf7f1a-0c02-4a4c-9f58-f8bc9590c210/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/14170462.jpeg" group-title="Aslanin Deney Odasi", Aslanin Deney Odasi Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/25dc0ef8-f9d5-43e1-aab7-7dc0e924cedf/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/13595203.jpeg" group-title="Aslanin Deney Odasi", Aslanin Deney Odasi Bölümü
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/9de9f7d4-7dc3-4a4a-a331-f17023f319b7/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20826828-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Hangisi Daha Çabuk Donar?
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/f2bd9ffc-890d-4636-b3b1-dace63075023/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20826824-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Kanın Yolculuğu
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/e4bdb566-f76e-462e-b70a-bf8a83d77504/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20826810-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Dayanıklı Köprüler
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/69e5e77e-a32f-4c7e-bcc4-ccfc838dc71f/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20826776-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 60. Bölüm - Gezegenlerin Hareketi
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/3a4d8b4c-2392-4819-b590-24fa0b030896/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20826753.jpeg" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 59. Bölüm - Değişmeyen Su Seviyesi
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/dcc7e9f6-c824-4daf-b9ea-6aeb4c2a293c/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20813573-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 58. Bölüm - Değişmeyen Su Seviyesi
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/e55f8a3e-c664-428d-9d21-c2ac59b7f76f/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20813567-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 57. Bölüm - Uzay Karanlıksa Gökyüzü Neden Mavi?
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/825ba6b7-e0bf-4b00-b88b-836a65f82708/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20813542-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 56. Bölüm - Ağaçlar Erozyonu Nasıl Önlüyor?
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/8a2b0070-35f5-4614-b46f-ba856ff77b57/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20813527-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 55. Bölüm - Yıkılmaz Kumdan Kale
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/09205804-0035-482d-8c8b-250b5ba7c0f2/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20813524-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 54. Bölüm - Küf Deneyi
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/a474e968-4bc5-44a9-a512-6953bc2e131e/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20813515-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 53. Bölüm - Ay'ın Lekeleri
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/11e05145-1bab-4d00-915e-355389445814/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20813502-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 52. Bölüm - Zararsız Plastik
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/1d2a00b5-8bf7-480d-b8c1-9b3d546a6037/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20744569-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 51. Bölüm - Ev Yapımı Boya
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/bcdaa870-2fab-4221-86b8-112b6f5dd7e8/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20744526-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 50. Bölüm - Gölge Boyu
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/46df9778-26fa-4428-8193-2c977041a379/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20744518-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 49. Bölüm - Roketler Nasıl Uçar
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/deb511e6-cbc7-43aa-942c-a028d60009b5/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20744509-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 48. Bölüm - Güneş ve Ay Tutulması
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/ccdb6d8d-97f5-48e9-9a5d-e9743beae7ee/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20744507-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 47. Bölüm - Görünmezlik Deneyi
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/07ef2125-7127-4a0f-bf19-44798c1a37b1/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-20744233-0-0-1278-720.png" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 46. Bölüm - Asit Silgisi
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/34122e7e-b651-4810-a843-e5e587c01376/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17183232.jpeg" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 45. Bölüm - Yüzey Alanı Nedir?
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/ec561fde-b2bc-45b9-9669-6120c7e47387/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17183225.jpeg" group-title="Aslanin Deney Odasi", Aslan'ın Deney Odası 44. Bölüm - Yapraklarda Neden Su Damlası Olur?
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/d2200262-47c2-4bea-a846-3a7d9202e54c/master.m3u8
 #EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/8873272.jpeg" group-title="Kare", Kare Bölümü
 https://cdn-v.pr.trt.com.tr/trtcocuk/website/26c259e4-446e-428f-b55b-955fa3f7a8d5/master.m3u8
 #EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/8901093.jpeg" group-title="Kare", Kare Bölümü
@@ -733,89 +799,23 @@ https://cdn-v.pr.trt.com.tr/trtcocuk/website/12b1bd3f-e40b-41b4-90c1-181596577c2
 https://cdn-v.pr.trt.com.tr/trtcocuk/website/2a13bcf0-2587-4c91-a36d-32003eac6f6e/master.m3u8
 #EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15439776.jpeg" group-title="Kare", Kare 117. Bölüm - Eyvah Hastalık
 https://cdn-v.pr.trt.com.tr/trtcocuk/website/5b93e46e-b7b0-4b77-94e3-fad04355fc4b/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/7719778.jpeg" group-title="Doru", Doru Bölümü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/13a26b8f-3d3e-41f0-8cf4-f02d338b7bb3/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15377355.jpeg" group-title="Doru", Muhtar Uçuyor!
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/7b93d395-067c-4fda-aa3b-a052b13bbce9/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/14761354.jpeg" group-title="Doru", Muhtar Uçuyor!
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/c7d863af-9619-4374-ad98-2b162816eb21/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17182805.jpeg" group-title="Doru", Her Şeye Rağmen
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/969e8308-3953-4332-b628-aed352eae999/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17137469.jpeg" group-title="Doru", Moya'nın Foyası
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/b7516da6-797c-45cb-ad30-c9caeb027707/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17137467.jpeg" group-title="Doru", Gizemli Çanta
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/2d0786ec-6436-4d81-8a81-b4fecb4346a2/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17107518.jpeg" group-title="Doru", Aile Özlemi
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/d599a233-7208-4406-b4c9-4810c40c504c/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17107523.jpeg" group-title="Doru", Doru 80. Bölüm - Yeni Tuzak
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/6191efc3-5fd4-4613-b41c-269d0fec3a34/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17102561.jpeg" group-title="Doru", Doru 79. Bölüm - Kaju Gitmeli
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/458f7c8c-cc7d-428e-9268-2ad77a92f4bb/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/17095697.jpeg" group-title="Doru", Doru 78. Bölüm - Koca Sürpriz Kaju
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/f8b6ed0b-8aa8-45e3-91fb-b90ed906f6bd/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16365338.jpeg" group-title="Doru", Doru 77. Bölüm - Ya Vadi Ya Dostlarınız
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/06e787eb-a4e8-47a5-944d-37584bf4abf0/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16365370.jpeg" group-title="Doru", Doru 76. Bölüm - Merhaba Hulusi Ben
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/52e935d0-0abd-4f17-9431-49c360d1aa5a/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16370614.jpeg" group-title="Doru", Doru 75. Bölüm - Oyuncak Kral
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/514db22a-59e2-4268-ae45-484751e207d5/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16370626.jpeg" group-title="Doru", Doru 74. Bölüm - Krallığıma Hoş Geldin!
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/1c3a2663-6147-45b6-80e9-5181785fa88b/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16370646.jpeg" group-title="Doru", Doru 73. Bölüm - Şehirden Ormana, Moya...
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/341b6237-86c3-491c-aae0-f8e18d20c630/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16359949.jpeg" group-title="Doru", Doru 72. Bölüm - Gecenin Gizemi
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/35734b59-73af-4298-bbe1-6d36735a9ec9/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/16370702.jpeg" group-title="Doru", Doru 72. Bölüm - Efsanevi Bal
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/973c3ca5-be8d-4828-9a93-b3b5c088721d/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15373775.jpeg" group-title="Doru", Doru 71. Bölüm - Yeni Dostlar Yeni Aile
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/93083182-bb0e-4bbb-9daf-a9acc6a062a0/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15373774.jpeg" group-title="Doru", Doru 70. Bölüm - Herkes Nerede?
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/d3630c12-d33f-481f-9efc-06a0f481542f/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15373771.jpeg" group-title="Doru", Doru 68. Bölüm - Dostluk Köprüsü
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/fa830764-9be0-44da-bb5c-350fc6f90731/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15373769.jpeg" group-title="Doru", Doru 67. Bölüm - Gök Dağlar
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/ebf6cfc9-6a18-40b0-9459-c9821846090b/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15373767.jpeg" group-title="Doru", Doru 66. Bölüm - Su Taşkını
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/c07f56ae-5b11-4812-804b-8956bbd324c3/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/15373765.jpeg" group-title="Doru", Doru 65. Bölüm - İyi Ki Doğdun...
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/1b5f4f2f-8c2a-4143-9f3b-0348eebbc87e/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21735505-0-0-1917-1080.png" group-title="Haberin Olsun", 25 Temmuz 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/b62ba53d-dd12-4394-8f40-7734b4c00aa1/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21735490-0-0-1917-1080.png" group-title="Haberin Olsun", 24 Temmuz 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/3d779f43-fcc9-4bf7-bd66-dd5708186462/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729945-0-0-1917-1080.png" group-title="Haberin Olsun", 28 Haziran 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/dfb2623a-ad3f-48b0-a09e-60fd0b59aeca/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729031-0-0-1917-1080.png" group-title="Haberin Olsun", 27 Haziran 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/698d4eb2-5200-4d2e-a0ea-42e478166cda/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21729028-0-0-1917-1080.png" group-title="Haberin Olsun", 26 Haziran 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/a69ea485-4c83-4d65-a147-122c3877155f/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21727512-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun -21 Haziran 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/f4fd1299-f9d8-4f4e-9351-2182417803dd/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21727511-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun -20 Haziran 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/d4eb6869-bdff-4d33-bfc2-7992f7350458/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21727506-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun -14 Haziran 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/7d1a5e0a-51ea-416d-9cc3-5741ab217e4f/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21725366-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun -13 Haziran 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/dc260e63-9205-4d25-ae56-0541e0a2825f/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21725364-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun -12 Haziran 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/10a467f0-2a79-4d3d-b086-485ad4101cd0/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21722805-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun - 7 Haziran 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/749e6dbe-de31-4051-b9a0-458cd41d1759/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21722807-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun -6 Haziran 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/55e8079c-20dc-43da-9062-3877f14eb294/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21722657-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun - 5 Haziran 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/c8ee02b8-a311-47f6-ab81-83ecca636c25/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21721478-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun - 31 Mayıs 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/6e2a880b-cc55-4625-964b-a924d64bc2a7/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21721477-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun - 30 Mayıs 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/f84590a0-7bf6-4595-87fe-d89f39121f8e/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21721475-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun - 29 Mayıs 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/77656aad-44c6-481e-b859-0c0f8afec7d4/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21721470-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun - 24 Mayıs 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/9b2cfa62-df0f-4d3c-ad02-b4a9dfea7a42/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21721468-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun - 23 Mayıs 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/1bc205d6-55da-407e-8f8a-63b92757f97a/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21721466-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun - 22 Mayıs 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/12f25666-aeea-498f-b093-5e882772e80c/master.m3u8
-#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/screenshot-21721463-0-0-1917-1080.png" group-title="Haberin Olsun", Haberin Olsun - 17 Mayıs 2026
-https://cdn-v.pr.trt.com.tr/trtcocuk/website/729a3d06-298b-4ab5-96d7-82960573a626/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10222235.jpeg" group-title="Dijital Tayfa", Drone Yarışları
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/09ab3bd5-b78b-4231-84f2-fcfbb2d979fe/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10222226.jpeg" group-title="Dijital Tayfa", Oltaya Dikkat
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/fd791388-fc4e-4875-bb50-ebf5fc25f4bc/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10222216.jpeg" group-title="Dijital Tayfa", Genç Mucit
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/cc33015d-475e-4ec2-83e8-523c37a1c01f/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10222208.jpeg" group-title="Dijital Tayfa", Geleceğin Meslekleri
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/ba0848de-fccd-4a09-ad87-3a940ecf685b/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10222205.jpeg" group-title="Dijital Tayfa", Dijital Tayfa 6
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/3c49cbcc-b43f-4dfc-bf41-bb35008d30b4/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10222203.jpeg" group-title="Dijital Tayfa", Dijital Tayfa 5
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/31e5ad70-9638-4220-bceb-9e9983a2b0f0/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10222185.jpeg" group-title="Dijital Tayfa", Dijital Tayfa 4
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/d05916b1-bd1f-4d3c-a528-1a54381bb06f/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10222178.jpeg" group-title="Dijital Tayfa", Dijital Tayfa 3
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/c88873f2-3c23-42db-9242-5abe4673ddbd/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10222172.jpeg" group-title="Dijital Tayfa", Dijital Tayfa 2
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/56604a26-132e-4107-b886-bd66d5f745ba/master.m3u8
+#EXTINF:-1 tvg-logo="https://cdn-i.pr.trt.com.tr/trtcocuk/10222166.jpeg" group-title="Dijital Tayfa", Dijital Tayfa 1
+https://cdn-v.pr.trt.com.tr/trtcocuk/website/9fe8bac6-e708-4601-a826-a124142c9300/master.m3u8
