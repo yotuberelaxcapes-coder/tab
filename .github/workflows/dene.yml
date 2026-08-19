@@ -2,11 +2,9 @@ name: 7/24 Kesintisiz TV Yayini
 
 on:
   schedule:
-    - cron: '0 */6 * * *'  # Her 6 saatte bir otomatik olarak tetiklenir
-  workflow_dispatch:       # İstediğin zaman GitHub üzerinden manuel başlatabilmen için
+    - cron: '0 */6 * * *' 
+  workflow_dispatch:      
 
-# Bu kısım çok önemli: Yeni görev başladığında eskisini anında öldürür. 
-# Böylece aynı anda iki yayın gönderip sunucuyu çökertmez ve senin istediğin "saniyelik dur-başla" döngüsünü kurar.
 concurrency:
   group: livestream
   cancel-in-progress: true 
@@ -26,10 +24,10 @@ jobs:
       - name: Gerekli Kütüphaneleri Yükle
         run: pip install requests
 
-      - name: FFmpeg Kurulumu
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y ffmpeg
+      # apt-get yerine bu hazır aksiyonu kullanıyoruz (Kurulum 1-2 saniye sürer)
+      - name: FFmpeg Hızlı Kurulum
+        uses: FedericoCarboni/setup-ffmpeg@v3
+        id: setup-ffmpeg
 
       - name: Yayını Başlat
         run: python stream.py
